@@ -1,4 +1,4 @@
-import Alert from "../../components/addons/Alert";
+import Alert from "../../components/blocks/basic/Alert/Editor";
 
 export const pb_alert = {
   type: "content",

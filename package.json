@@ -16,6 +16,7 @@
     "start": "rollup -c -w"
   },
   "dependencies": {
+    "@fortawesome/react-fontawesome": "^0.2.0",
     "classnames": "^2.3.2",
     "lodash": "^4.17.21",
     "react-html-parser": "^2.0.2",
