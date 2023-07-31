@@ -3,6 +3,8 @@ import typescript from 'rollup-plugin-typescript2';
 import { nodeResolve } from '@rollup/plugin-node-resolve';
 import commonjs from '@rollup/plugin-commonjs';
 import pkg from './package.json';
+import json from '@rollup/plugin-json';
+
 
 export default {
   input: 'src/index.tsx',
@@ -20,6 +22,7 @@ export default {
     }
   ],
   plugins: [
+    json(),
     sass({ insert: true }),
     typescript(),
     commonjs(),
