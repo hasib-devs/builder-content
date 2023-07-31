@@ -6,7 +6,7 @@ export const pb_alert = {
   title: "Alert",
   name: "pb_alert",
   category: "",
-  Component: Alert,
+  Editor: Alert,
   styleJSON: {
     content_color:
       "{{SELECTOR}} .pb-alert-addon-content{ background: {{data.content_color}}; }",

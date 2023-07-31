@@ -6,7 +6,7 @@ export const pb_carousel = {
   title: "Carousel",
   name: "pb_carousel",
   category: "",
-  Component: Carousel,
+  Editor: Carousel,
   styleJSON: {
     slide_height:
       "{{SELECTOR}} .pb-carousel-content-wrap { height: {{data.slide_height}}; }",

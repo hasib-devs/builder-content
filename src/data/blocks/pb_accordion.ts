@@ -6,7 +6,7 @@ export const pb_accordion = {
   title: "Accordion",
   name: "pb_accordion",
   category: "",
-  Component: Accordion,
+  Editor: Accordion,
   styleJSON: {
     title_style: "{{SELECTOR}} .pb-accordion-title{{data.title_style}}",
     title_color: "{{SELECTOR}} .pb-accordion-title-content{{data.title_color}}",

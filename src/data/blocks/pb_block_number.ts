@@ -6,7 +6,7 @@ export const pb_block_number = {
   title: "Block Number",
   name: "pb_block_number",
   category: "",
-  Component: BlockNumber,
+  Editor: BlockNumber,
   styleJSON: {
     number_color:
       "{{SELECTOR}} .pb-blocknumber-number span{ color: {{data.number_color}}; }",

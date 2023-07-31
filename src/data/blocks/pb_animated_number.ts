@@ -6,7 +6,7 @@ export const pb_animated_number = {
   title: "Animated Number",
   name: "pb_animated_number",
   category: "",
-  Component: AnimatedNumber,
+  Editor: AnimatedNumber,
   styleJSON: {
     counter_align:
       "{{SELECTOR}} .pb-animated-counter-content { text-align: {{data.counter_align}}; }",

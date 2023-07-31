@@ -42,7 +42,7 @@ export const addonsJSON = {
     title: "Form",
     name: "pb_form",
     category: "",
-    Component: Form,
+    Editor: Form,
     styleJSON: {
       "pb_default_form.field_width":
         "{{SELECTOR}} { width: {{data.field_width}}; }",
@@ -1050,7 +1050,7 @@ export const addonsJSON = {
     title: "Feature Box",
     name: "pb_feature_box",
     category: "",
-    Component: FeatureBox,
+    Editor: FeatureBox,
     styleJSON: {
       flip_height:
         "{{SELECTOR}} .pb-flipbox-panel, {{SELECTOR}} .threeD-item { height: {{data.flip_height}}; }",
@@ -2409,7 +2409,7 @@ export const addonsJSON = {
     title: "Flip Box",
     name: "pb_flip_box",
     category: "",
-    Component: FlipBox,
+    Editor: FlipBox,
     styleJSON: {
       flip_height:
         "{{SELECTOR}} .pb-flipbox-panel, {{SELECTOR}} .threeD-item { height: {{data.flip_height}}; }",
@@ -3674,7 +3674,7 @@ export const addonsJSON = {
     title: "Heading",
     name: "pb_heading",
     category: "",
-    Component: Heading,
+    Editor: Heading,
     styleJSON: {
       align: "{{SELECTOR}} .pb-addon-title { text-align: {{data.align}}; }",
       title_color:
@@ -3805,7 +3805,7 @@ export const addonsJSON = {
     title: "Icon",
     name: "pb_icon",
     category: "",
-    Component: Icon,
+    Editor: Icon,
     styleJSON: {
       icon_align:
         "{{SELECTOR}} .pb-icon-content { text-align: {{data.icon_align}}; }",
@@ -4211,7 +4211,7 @@ export const addonsJSON = {
     title: "Image",
     name: "pb_image",
     category: "",
-    Component: Image,
+    Editor: Image,
     styleJSON: {
       image_align:
         "{{SELECTOR}} .pb-image-addon-content-wrap { text-align: {{data.image_align}}; }",
@@ -4568,7 +4568,7 @@ export const addonsJSON = {
     title: "Image Hover",
     name: "pb_image_hover",
     category: "",
-    Component: ImageHover,
+    Editor: ImageHover,
     styleJSON: {
       front_bg: "{{SELECTOR}} .pb-image-hover-bg",
       overlay_bg:
@@ -5448,7 +5448,7 @@ export const addonsJSON = {
     title: "Person",
     name: "pb_person",
     category: "",
-    Component: PersonComponent,
+    Editor: PersonComponent,
     styleJSON: {
       "social_item.icon_color":
         "{{SELECTOR}} .pb-person-social-list a { color: {{data.icon_color}}; }",
@@ -6212,7 +6212,7 @@ export const addonsJSON = {
     title: "Person Carousel",
     name: "pb_person_carousel",
     category: "",
-    Component: PersonCarousel,
+    Editor: PersonCarousel,
     styleJSON: {
       person_align:
         "{{SELECTOR}} .pb-person-carousel-addon-content{ text-align: {{data.person_align}}; }",
@@ -7727,7 +7727,7 @@ export const addonsJSON = {
     title: "Pie Progress",
     name: "pb_pie_progress",
     category: "",
-    Component: PieProgress,
+    Editor: PieProgress,
     styleJSON: {
       progress_size:
         "{{SELECTOR}} .pb-pie-chart { height: {{data.progress_size}}px; width: {{data.progress_size}}px; }",
@@ -8067,7 +8067,7 @@ export const addonsJSON = {
     title: "Posts Grid",
     name: "pb_posts_grid",
     category: "",
-    Component: PostGrid,
+    Editor: PostGrid,
     styleJSON: {
       post_title_color:
         "{{SELECTOR}} .pb-post-grid-title a { color: {{data.post_title_color}}; }",
@@ -9347,7 +9347,7 @@ export const addonsJSON = {
     title: "Pricing Table",
     name: "pb_pricing_table",
     category: "",
-    Component: PricingTable,
+    Editor: PricingTable,
     styleJSON: {
       "pricing_feature.icon_list_color":
         "{{SELECTOR}} .pb-pricing-list i { color: {{data.icon_list_color}}; }",
@@ -10559,7 +10559,7 @@ export const addonsJSON = {
     title: "Progress Bar",
     name: "pb_progress_bar",
     category: "",
-    Component: ProgressBar,
+    Editor: ProgressBar,
     styleJSON: {
       progress_height:
         "{{SELECTOR}} .pb-progress{ height: {{data.progress_height}}px; }",
@@ -10885,7 +10885,7 @@ export const addonsJSON = {
     title: "Raw HTML",
     name: "pb_raw_html",
     category: "",
-    Component: RawHtml,
+    Editor: RawHtml,
     styleJSON: {
       align:
         "{{SELECTOR}} .pb-raw-html-content { text-align: {{data.align}}; }",
@@ -10995,7 +10995,7 @@ export const addonsJSON = {
     title: "Social Button",
     name: "pb_social_button",
     category: "",
-    Component: SocialButton,
+    Editor: SocialButton,
     styleJSON: {
       "social_item.button_color":
         "{{SELECTOR}} .pb-social-btn { color: {{data.button_color}}; }",
@@ -11382,7 +11382,7 @@ export const addonsJSON = {
     title: "Tab",
     name: "pb_tab",
     category: "",
-    Component: Tab,
+    Editor: Tab,
     styleJSON: {
       navbar_width:
         "{{SELECTOR}} .vertical-tab ul.pb-tab-nav, {{SELECTOR}} .horizontal-tab .pb-tab-nav-list { width: {{data.navbar_width}}; }",
@@ -12331,7 +12331,7 @@ export const addonsJSON = {
     title: "Testimonial",
     name: "pb_testimonial",
     category: "",
-    Component: Testimonial,
+    Editor: Testimonial,
     styleJSON: {
       testimonial_align:
         "{{SELECTOR}} .pb-testimonial-addon-content{ text-align: {{data.testimonial_align}}; }",
@@ -12867,7 +12867,7 @@ export const addonsJSON = {
     title: "Testimonial Carousel",
     name: "pb_testimonial_carousel",
     category: "",
-    Component: TestimonialCarousel,
+    Editor: TestimonialCarousel,
     styleJSON: {
       testimonial_align:
         "{{SELECTOR}} .pb-testimonial-carousel-addon-content{ text-align: {{data.testimonial_align}}; }",
@@ -13982,7 +13982,7 @@ export const addonsJSON = {
     title: "Video",
     name: "pb_video",
     category: "",
-    Component: VideoComponent,
+    Editor: VideoComponent,
     styleJSON: {
       video_width:
         "{{SELECTOR}} .pb-video-block.pb-embed-responsive iframe { width: {{data.video_width}}; }",
@@ -14127,7 +14127,7 @@ export const addonsJSON = {
     title: "Video Popup",
     name: "pb_video_popup",
     category: "",
-    Component: VideoPopup,
+    Editor: VideoPopup,
     styleJSON: {
       icon_color:
         "{{SELECTOR}} .pb-video-popup-icon i { color: {{data.icon_color}}; }",

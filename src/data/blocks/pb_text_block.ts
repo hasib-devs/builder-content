@@ -6,7 +6,7 @@ export const pb_text_block = {
   title: "Text Block",
   name: "pb_text_block",
   category: "",
-  Component: TextBlock,
+  Editor: TextBlock,
   styleJSON: {
     align: "{{SELECTOR}} .pb-text-block-addon { text-align: {{data.align}}; }",
     color: "{{SELECTOR}} .pb-text-block-content { color: {{data.color}}; }",
