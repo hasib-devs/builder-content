@@ -142,5 +142,6 @@ export const pb_text_block = {
     },
   },
   defaultAddon: true,
+group: "basic",
   js_template: true,
 };

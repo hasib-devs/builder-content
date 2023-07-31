@@ -320,5 +320,6 @@ export const pb_button_group = {
     },
   },
   defaultAddon: true,
+group: "basic",
   js_template: true,
 };

@@ -319,5 +319,6 @@ export const pb_button = {
     },
   },
   defaultAddon: true,
+group: "basic",
   js_template: true,
 };

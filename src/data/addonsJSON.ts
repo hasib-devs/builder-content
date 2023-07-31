@@ -27,6 +27,15 @@ import { pb_button_group } from "./blocks/pb_button_group";
 import { pb_carousel } from "./blocks/pb_carousel";
 import { pb_text_block } from "./blocks/pb_text_block";
 
+
+export const addonGroups = {
+  basic: "Basic",
+  ecommerce: "Ecommerce",
+  site: "Site",
+};
+
+export type AddonGroupType = keyof typeof addonGroups;
+
 export const addonsJSON = {
   pb_accordion,
   pb_alert,
@@ -1042,6 +1051,7 @@ export const addonsJSON = {
       },
     },
     defaultAddon: true,
+group: "basic",
     js_template: true,
   },
   pb_feature_box: {
@@ -2401,6 +2411,7 @@ export const addonsJSON = {
       },
     },
     defaultAddon: true,
+group: "basic",
     js_template: true,
   },
   pb_flip_box: {
@@ -3666,6 +3677,7 @@ export const addonsJSON = {
       },
     },
     defaultAddon: true,
+group: "basic",
     js_template: true,
   },
   pb_heading: {
@@ -3797,6 +3809,7 @@ export const addonsJSON = {
       },
     },
     defaultAddon: true,
+group: "basic",
     js_template: true,
   },
   pb_icon: {
@@ -4203,6 +4216,7 @@ export const addonsJSON = {
       },
     },
     defaultAddon: true,
+group: "basic",
     js_template: true,
   },
   pb_image: {
@@ -4560,6 +4574,7 @@ export const addonsJSON = {
       },
     },
     defaultAddon: true,
+group: "basic",
     js_template: true,
   },
   pb_image_hover: {
@@ -5440,6 +5455,7 @@ export const addonsJSON = {
       },
     },
     defaultAddon: true,
+group: "basic",
     js_template: true,
   },
   pb_person: {
@@ -6204,6 +6220,7 @@ export const addonsJSON = {
       },
     },
     defaultAddon: true,
+group: "basic",
     js_template: true,
   },
   pb_person_carousel: {
@@ -7719,6 +7736,7 @@ export const addonsJSON = {
       },
     },
     defaultAddon: true,
+group: "basic",
     js_template: true,
   },
   pb_pie_progress: {
@@ -8059,6 +8077,7 @@ export const addonsJSON = {
       },
     },
     defaultAddon: true,
+group: "basic",
     js_template: true,
   },
   pb_posts_grid: {
@@ -9339,6 +9358,7 @@ export const addonsJSON = {
       },
     },
     defaultAddon: true,
+group: "basic",
     js_template: false,
   },
   pb_pricing_table: {
@@ -10551,6 +10571,7 @@ export const addonsJSON = {
       },
     },
     defaultAddon: true,
+group: "basic",
     js_template: true,
   },
   pb_progress_bar: {
@@ -10877,6 +10898,7 @@ export const addonsJSON = {
       },
     },
     defaultAddon: true,
+group: "basic",
     js_template: true,
   },
   pb_raw_html: {
@@ -10987,6 +11009,7 @@ export const addonsJSON = {
       },
     },
     defaultAddon: true,
+group: "basic",
     js_template: true,
   },
   pb_social_button: {
@@ -11374,6 +11397,7 @@ export const addonsJSON = {
       },
     },
     defaultAddon: true,
+group: "basic",
     js_template: true,
   },
   pb_tab: {
@@ -12323,6 +12347,7 @@ export const addonsJSON = {
       },
     },
     defaultAddon: true,
+group: "basic",
     js_template: true,
   },
   pb_testimonial: {
@@ -12859,6 +12884,7 @@ export const addonsJSON = {
       },
     },
     defaultAddon: true,
+group: "basic",
     js_template: true,
   },
   pb_testimonial_carousel: {
@@ -13973,6 +13999,7 @@ export const addonsJSON = {
       },
     },
     defaultAddon: true,
+group: "basic",
     js_template: true,
   },
 
@@ -14119,6 +14146,7 @@ export const addonsJSON = {
       },
     },
     defaultAddon: true,
+group: "basic",
     js_template: true,
   },
   pb_video_popup: {
@@ -14534,6 +14562,7 @@ export const addonsJSON = {
       },
     },
     defaultAddon: true,
+group: "basic",
     js_template: true,
   },
 };

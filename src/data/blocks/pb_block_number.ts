@@ -292,5 +292,6 @@ export const pb_block_number = {
     },
   },
   defaultAddon: true,
+group: "basic",
   js_template: true,
 };

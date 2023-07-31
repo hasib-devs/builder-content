@@ -450,5 +450,6 @@ export const pb_animated_number = {
     },
   },
   defaultAddon: true,
+group: "basic",
   js_template: true,
 };

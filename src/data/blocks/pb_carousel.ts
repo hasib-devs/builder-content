@@ -1449,5 +1449,6 @@ export const pb_carousel = {
     },
   },
   defaultAddon: true,
+group: "basic",
   js_template: true,
 };

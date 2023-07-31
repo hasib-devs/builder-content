@@ -575,5 +575,6 @@ export const pb_accordion = {
     },
   },
   defaultAddon: true,
+group: "basic",
   js_template: true,
 };

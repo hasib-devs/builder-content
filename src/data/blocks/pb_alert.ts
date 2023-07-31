@@ -201,5 +201,6 @@ export const pb_alert = {
     },
   },
   defaultAddon: true,
+group: "basic",
   js_template: true,
 };
