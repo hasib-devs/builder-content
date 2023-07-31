@@ -1,1 +1,1 @@
-export { default as Button } from './Button'
+export { default as page_data } from './page_data'

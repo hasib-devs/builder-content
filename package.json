@@ -15,7 +15,12 @@
     "build": "rollup -c",
     "start": "rollup -c -w"
   },
-  "dependencies": {},
+  "dependencies": {
+    "classnames": "^2.3.2",
+    "lodash": "^4.17.21",
+    "react-html-parser": "^2.0.2",
+    "react-slick": "^0.29.0"
+  },
   "peerDependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
@@ -24,8 +29,11 @@
     "@rollup/plugin-alias": "^5.0.0",
     "@rollup/plugin-commonjs": "^25.0.3",
     "@rollup/plugin-node-resolve": "^15.1.0",
+    "@types/lodash": "^4.14.196",
     "@types/react": "^18.2.0",
     "@types/react-dom": "^18.2.0",
+    "@types/react-html-parser": "^2.0.2",
+    "@types/react-slick": "^0.23.10",
     "babel-core": "^6.26.3",
     "babel-runtime": "^6.26.0",
     "react": "^18.2.0",
