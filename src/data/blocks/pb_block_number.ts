@@ -1,5 +1,4 @@
 import BlockNumber from "../../components/blocks/basic/BlockNumber/Editor";
-import AnimatedNumber from "../../components/blocks/basic/AnimatedNumber/Editor";
 
 export const pb_block_number = {
   type: "content",
@@ -7,7 +6,7 @@ export const pb_block_number = {
   title: "Block Number",
   name: "pb_block_number",
   category: "",
-  Component: AnimatedNumber,
+  Component: BlockNumber,
   styleJSON: {
     number_color:
       "{{SELECTOR}} .pb-blocknumber-number span{ color: {{data.number_color}}; }",

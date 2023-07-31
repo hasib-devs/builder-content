@@ -1,6 +1,6 @@
 import React, { FC } from 'react'
 
-interface WppbButtonProps {
+export interface WppbButtonProps {
   data: {
     style: string
     shape: string
@@ -17,7 +17,7 @@ interface WppbButtonProps {
   }
 }
 
-const Button: FC<WppbButtonProps> = ({ data }) => {
+const Button = ({ data }: WppbButtonProps) => {
   const {
     style,
     shape,

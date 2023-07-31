@@ -1,6 +1,7 @@
-import React, { FC } from 'react'
+import React from 'react'
+import { FC } from 'react'
 
-interface Props {
+export interface WppbBlockNumberProps {
   data: {
     number?: string
     number_title?: string
@@ -8,7 +9,7 @@ interface Props {
   }
 }
 
-const BlockNumbers: FC<Props> = ({ data }) => {
+const BlockNumber: FC<WppbBlockNumberProps> = ({ data }) => {
   const { number, number_title, number_description } = data
 
   return (
@@ -36,4 +37,4 @@ const BlockNumbers: FC<Props> = ({ data }) => {
   )
 }
 
-export default BlockNumbers
+export default BlockNumber
