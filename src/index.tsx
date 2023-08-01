@@ -1,4 +1,5 @@
 export { addonGroups } from './data/addonsJSON'
+import Button from './components/Button'
 
 export {
   BuilderConfigProvider,
@@ -8,3 +9,5 @@ export {
 
 export { default as RowPreview } from './components/preview/RowPreview'
 export { default as page_data } from './page_data'
+
+export { Button }
