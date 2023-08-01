@@ -19,6 +19,9 @@ export default {
     {
       file: pkg.module,
       format: 'es',
+      exports: 'named',
+      sourcemap: true,
+      strict: false
     }
   ],
   plugins: [

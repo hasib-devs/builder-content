@@ -1,4 +1,4 @@
-import Carousel from "../../components/blocks/basic/Carousel/Editor";
+import Carousel from "../../../components/blocks/basic/Carousel/Editor";
 
 export const pb_carousel = {
   type: "content",

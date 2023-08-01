@@ -1,4 +1,4 @@
-import TextBlock from "../../components/blocks/basic/TextBlock/Editor";
+import TextBlock from "../../../components/blocks/basic/TextBlock/Editor";
 
 export const pb_text_block = {
   type: "content",
