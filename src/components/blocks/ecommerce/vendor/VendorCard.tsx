@@ -22,12 +22,14 @@ const VendorCard = ({ vendor }: Props) => {
     >
       <div className="relative overflow-hidden text-center">
         {vendor?.banner ? (
-          <Image
-            src={generateImageUrl(vendor?.banner?.path)}
-            height={100}
-            width={280}
-            alt="store-banner"
-          />
+          <div>
+            <Image
+              src={generateImageUrl(vendor?.banner?.path)}
+              height={100}
+              width={280}
+              alt="store-banner"
+            />
+          </div>
         ) : (
           <div className="flex h-[100px] w-full items-center justify-center border-b">
             <PlaceHolderImage />
@@ -37,13 +39,15 @@ const VendorCard = ({ vendor }: Props) => {
       </div>
       <div className="p-5">
         {vendor?.logo ? (
-          <Image
-            src={generateImageUrl(vendor?.logo?.path)}
-            height={45}
-            width={45}
-            className="rounded-full"
-            alt="store-logo"
-          />
+          <div>
+            <Image
+              src={generateImageUrl(vendor?.logo?.path)}
+              height={45}
+              width={45}
+              className="rounded-full"
+              alt="store-logo"
+            />
+          </div>
         ) : (
           <div className="flex h-[45px] w-[45px] items-center justify-center rounded-full border bg-[#f8f9f8]">
             <StoreIcon />

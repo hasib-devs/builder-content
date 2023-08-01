@@ -4,6 +4,7 @@ import { nodeResolve } from '@rollup/plugin-node-resolve';
 import commonjs from '@rollup/plugin-commonjs';
 import pkg from './package.json';
 import json from '@rollup/plugin-json';
+import globals from 'rollup-plugin-node-globals';
 
 
 export default {
@@ -29,7 +30,9 @@ export default {
     sass({ insert: true }),
     typescript(),
     commonjs(),
-    nodeResolve()
+    nodeResolve(),
+    globals(),
+    // replace()
   ],
   external: ['react', 'react-dom']
 };

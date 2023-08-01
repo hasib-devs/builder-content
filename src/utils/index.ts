@@ -13,5 +13,5 @@ export const generateImageUrl = (path: string) => {
   if (path.match(/^(http|https):\/\//)) {
     return path;
   }
-  return `${process.env.NEXT_PUBLIC_STORAGE_URL}/${path}`;
+  return `/${path}`;
 };

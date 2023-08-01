@@ -1,22 +1,14 @@
-import { useVendors } from '../../../../api/vendor-api'
 // import StoreCardLoader from '../../../../components/loaders/StoreCardLoader'
 import classNames from 'classnames'
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 // import LinkButton from "../../shared/LinkButton";
 import VendorCard from './VendorCard'
 import React from 'react'
 
 const VendorSection = () => {
   const [filter, setFilter] = useState('popular')
-  const {
-    data: stores,
-    isLoading,
-    refetch,
-  } = useVendors({ filter }, { enabled: false })
-
-  useEffect(() => {
-    refetch()
-  }, [filter])
+  const stores: any = { data: [] }
+  const isLoading = false
 
   return (
     <div className="container">

@@ -91,12 +91,14 @@ const ProductCard: FC<ProductCardProps> = ({
         <div className="relative">
           <div className="overflow-hidden rounded border text-center">
             {product.media.length && product.media[0]?.path ? (
-              <Image
-                src={generateImageUrl(product.media[0].path)}
-                height={400}
-                width={400}
-                alt="product-image"
-              />
+              <div>
+                {/* <Image
+                  src={generateImageUrl(product.media[0].path)}
+                  height={400}
+                  width={400}
+                  alt="product-image"
+                /> */}
+              </div>
             ) : (
               <div className="flex h-[265px] w-full items-center justify-center border-gray-200 bg-[#F8F9F8] ">
                 <PlaceHolderImage width={70} height={70} />

@@ -26,8 +26,8 @@ import { pb_button } from "./blocks/basic/pb_button";
 import { pb_button_group } from "./blocks/basic/pb_button_group";
 import { pb_carousel } from "./blocks/basic/pb_carousel";
 import { pb_text_block } from "./blocks/basic/pb_text_block";
-// import { category_grid } from "./blocks/ecommerce/category_grid";
-// import { category_list } from "./blocks/ecommerce/category_list";
+import { category_grid } from "./blocks/ecommerce/category_grid";
+import { category_list } from "./blocks/ecommerce/category_list";
 // import { product_grid } from "./blocks/ecommerce/product_grid";
 // import { vendor_section } from "./blocks/ecommerce/vendor_section";
 
@@ -41,8 +41,8 @@ export type AddonGroupType = keyof typeof addonGroups;
 
 export const addonsJSON = {
   // Ecommerce
-  // category_grid,
-  // category_list,
+  category_grid,
+  category_list,
   // product_grid,
   // vendor_section,
   // Basic

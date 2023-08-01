@@ -1,24 +1,9 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import CategoryListItem from './CategoryListItem'
 import { CategoryTree } from '../../../../types/catalog'
-import arrayToTree from 'array-to-tree'
-import axios, { catalogConf } from './../../../lib/axios'
 
 const CategoryList = ({ data }) => {
-  const [categories, setCategories] = useState<CategoryTree[]>([])
-
-  const fetchCategories = async () => {
-    const response = await axios.get(`/api/v1/categories`, catalogConf)
-    setCategories(
-      arrayToTree(response.data.data, {
-        parentProperty: 'parent',
-        customID: '_id',
-      })
-    )
-  }
-  useEffect(() => {
-    fetchCategories()
-  }, [])
+  const categories: CategoryTree[] = []
 
   return (
     <div className=" h-full rounded border lg:block">

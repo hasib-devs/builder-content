@@ -1,17 +1,8 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import CategoryCard from './CategoryCard'
-import axios, { catalogConf } from '../../../lib/axios'
 
 const CategoryGrid = ({ data }) => {
-  const [categories, setCategories] = useState<any[]>([])
-
-  const fetchCategories = async () => {
-    const response = await axios.get(`/api/v1/categories`, catalogConf)
-    setCategories(response.data.data)
-  }
-  useEffect(() => {
-    fetchCategories()
-  }, [])
+  const categories: any[] = []
 
   return (
     <div className="grid grid-cols-2 place-items-center gap-x-20 gap-y-14 md:grid-cols-4 lg:grid-cols-5">
