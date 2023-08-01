@@ -52,6 +52,7 @@ export const addonsJSON = {
     name: "pb_form",
     category: "",
     Editor: Form,
+    Preview: Form,
     styleJSON: {
       "pb_default_form.field_width":
         "{{SELECTOR}} { width: {{data.field_width}}; }",
@@ -1061,6 +1062,7 @@ group: "basic",
     name: "pb_feature_box",
     category: "",
     Editor: FeatureBox,
+    Preview: FeatureBox,
     styleJSON: {
       flip_height:
         "{{SELECTOR}} .pb-flipbox-panel, {{SELECTOR}} .threeD-item { height: {{data.flip_height}}; }",
@@ -2421,6 +2423,7 @@ group: "basic",
     name: "pb_flip_box",
     category: "",
     Editor: FlipBox,
+    Preview: FlipBox,
     styleJSON: {
       flip_height:
         "{{SELECTOR}} .pb-flipbox-panel, {{SELECTOR}} .threeD-item { height: {{data.flip_height}}; }",
@@ -3687,6 +3690,7 @@ group: "basic",
     name: "pb_heading",
     category: "",
     Editor: Heading,
+    Preview: Heading,
     styleJSON: {
       align: "{{SELECTOR}} .pb-addon-title { text-align: {{data.align}}; }",
       title_color:
@@ -3819,6 +3823,7 @@ group: "basic",
     name: "pb_icon",
     category: "",
     Editor: Icon,
+    Preview: Icon,
     styleJSON: {
       icon_align:
         "{{SELECTOR}} .pb-icon-content { text-align: {{data.icon_align}}; }",
@@ -4226,6 +4231,7 @@ group: "basic",
     name: "pb_image",
     category: "",
     Editor: Image,
+    Preview: Image,
     styleJSON: {
       image_align:
         "{{SELECTOR}} .pb-image-addon-content-wrap { text-align: {{data.image_align}}; }",
@@ -4584,6 +4590,7 @@ group: "basic",
     name: "pb_image_hover",
     category: "",
     Editor: ImageHover,
+    Preview: ImageHover,
     styleJSON: {
       front_bg: "{{SELECTOR}} .pb-image-hover-bg",
       overlay_bg:
@@ -5465,6 +5472,7 @@ group: "basic",
     name: "pb_person",
     category: "",
     Editor: PersonComponent,
+    Preview: PersonComponent,
     styleJSON: {
       "social_item.icon_color":
         "{{SELECTOR}} .pb-person-social-list a { color: {{data.icon_color}}; }",
@@ -6230,6 +6238,7 @@ group: "basic",
     name: "pb_person_carousel",
     category: "",
     Editor: PersonCarousel,
+    Preview: PersonCarousel,
     styleJSON: {
       person_align:
         "{{SELECTOR}} .pb-person-carousel-addon-content{ text-align: {{data.person_align}}; }",
@@ -7746,6 +7755,7 @@ group: "basic",
     name: "pb_pie_progress",
     category: "",
     Editor: PieProgress,
+    Preview: PieProgress,
     styleJSON: {
       progress_size:
         "{{SELECTOR}} .pb-pie-chart { height: {{data.progress_size}}px; width: {{data.progress_size}}px; }",
@@ -8087,6 +8097,7 @@ group: "basic",
     name: "pb_posts_grid",
     category: "",
     Editor: PostGrid,
+    Preview: PostGrid,
     styleJSON: {
       post_title_color:
         "{{SELECTOR}} .pb-post-grid-title a { color: {{data.post_title_color}}; }",
@@ -9368,6 +9379,7 @@ group: "basic",
     name: "pb_pricing_table",
     category: "",
     Editor: PricingTable,
+    Preview: PricingTable,
     styleJSON: {
       "pricing_feature.icon_list_color":
         "{{SELECTOR}} .pb-pricing-list i { color: {{data.icon_list_color}}; }",
@@ -10581,6 +10593,7 @@ group: "basic",
     name: "pb_progress_bar",
     category: "",
     Editor: ProgressBar,
+    Preview: ProgressBar,
     styleJSON: {
       progress_height:
         "{{SELECTOR}} .pb-progress{ height: {{data.progress_height}}px; }",
@@ -10908,6 +10921,7 @@ group: "basic",
     name: "pb_raw_html",
     category: "",
     Editor: RawHtml,
+    Preview: RawHtml,
     styleJSON: {
       align:
         "{{SELECTOR}} .pb-raw-html-content { text-align: {{data.align}}; }",
@@ -11019,6 +11033,7 @@ group: "basic",
     name: "pb_social_button",
     category: "",
     Editor: SocialButton,
+    Preview: SocialButton,
     styleJSON: {
       "social_item.button_color":
         "{{SELECTOR}} .pb-social-btn { color: {{data.button_color}}; }",
@@ -11407,6 +11422,7 @@ group: "basic",
     name: "pb_tab",
     category: "",
     Editor: Tab,
+    Preview: Tab,
     styleJSON: {
       navbar_width:
         "{{SELECTOR}} .vertical-tab ul.pb-tab-nav, {{SELECTOR}} .horizontal-tab .pb-tab-nav-list { width: {{data.navbar_width}}; }",
@@ -12357,6 +12373,7 @@ group: "basic",
     name: "pb_testimonial",
     category: "",
     Editor: Testimonial,
+    Preview: Testimonial,
     styleJSON: {
       testimonial_align:
         "{{SELECTOR}} .pb-testimonial-addon-content{ text-align: {{data.testimonial_align}}; }",
@@ -12894,6 +12911,7 @@ group: "basic",
     name: "pb_testimonial_carousel",
     category: "",
     Editor: TestimonialCarousel,
+    Preview: TestimonialCarousel,
     styleJSON: {
       testimonial_align:
         "{{SELECTOR}} .pb-testimonial-carousel-addon-content{ text-align: {{data.testimonial_align}}; }",
@@ -14010,6 +14028,7 @@ group: "basic",
     name: "pb_video",
     category: "",
     Editor: VideoComponent,
+    Preview: VideoComponent,
     styleJSON: {
       video_width:
         "{{SELECTOR}} .pb-video-block.pb-embed-responsive iframe { width: {{data.video_width}}; }",
@@ -14156,6 +14175,7 @@ group: "basic",
     name: "pb_video_popup",
     category: "",
     Editor: VideoPopup,
+    Preview: VideoPopup,
     styleJSON: {
       icon_color:
         "{{SELECTOR}} .pb-video-popup-icon i { color: {{data.icon_color}}; }",

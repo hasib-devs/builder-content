@@ -7,6 +7,7 @@ export const pb_button_group = {
   name: "pb_button_group",
   category: "",
   Editor: ButtonGroup,
+  Preview: ButtonGroup,
   styleJSON: {
     "button_item.button_color":
       "{{SELECTOR}} .pb-btn-addons { color: {{data.button_color}}; }",

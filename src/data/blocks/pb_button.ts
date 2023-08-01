@@ -7,6 +7,7 @@ export const pb_button = {
   name: "pb_button",
   category: "",
   Editor: Button,
+  Preview: Button,
   styleJSON: {
     button_padding:
       "{{SELECTOR}} .pb-button-addon-content .pb-btn-addons { padding: {{data.button_padding}}; }",

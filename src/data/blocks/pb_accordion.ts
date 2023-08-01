@@ -7,6 +7,7 @@ export const pb_accordion = {
   name: "pb_accordion",
   category: "",
   Editor: Accordion,
+  Preview: Accordion,
   styleJSON: {
     title_style: "{{SELECTOR}} .pb-accordion-title{{data.title_style}}",
     title_color: "{{SELECTOR}} .pb-accordion-title-content{{data.title_color}}",
