@@ -4,7 +4,6 @@ import { CategoryTree } from '../../../../types/catalog'
 
 const CategoryList = ({ data }) => {
   const categories: CategoryTree[] = []
-
   return (
     <div className=" h-full rounded border lg:block">
       <div className="relative h-full border py-4">

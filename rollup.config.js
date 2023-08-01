@@ -6,7 +6,6 @@ import pkg from './package.json';
 import json from '@rollup/plugin-json';
 import globals from 'rollup-plugin-node-globals';
 
-
 export default {
   input: 'src/index.tsx',
   output: [
