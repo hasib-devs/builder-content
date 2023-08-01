@@ -1,4 +1,5 @@
 import CategoryListEditor from "../../../components/blocks/ecommerce/categories/CategoryListEditor";
+import CategoryListPreview from "../../../components/blocks/ecommerce/categories/CategoryListPreview";
 
 export const category_list = {
   type: "content",
@@ -6,7 +7,7 @@ export const category_list = {
   title: "Category List",
   name: "category_list",
   Editor: CategoryListEditor,
-  Preview: CategoryListEditor,
+  Preview: CategoryListPreview,
   styleJSON: {},
   visibility: true,
   icon: "pb-font-block-number",

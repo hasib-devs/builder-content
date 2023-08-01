@@ -1,4 +1,4 @@
-
+import sass from 'rollup-plugin-sass';
 import typescript from 'rollup-plugin-typescript2';
 import { nodeResolve } from '@rollup/plugin-node-resolve';
 import commonjs from '@rollup/plugin-commonjs';
@@ -26,6 +26,7 @@ export default {
   ],
   plugins: [
     json(),
+    sass({ insert: true }),
     typescript(),
     commonjs(),
     nodeResolve(),
