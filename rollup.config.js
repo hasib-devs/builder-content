@@ -4,7 +4,6 @@ import { nodeResolve } from '@rollup/plugin-node-resolve';
 import commonjs from '@rollup/plugin-commonjs';
 import pkg from './package.json';
 import json from '@rollup/plugin-json';
-import globals from 'rollup-plugin-node-globals';
 import alias from '@rollup/plugin-alias';
 
 
@@ -37,7 +36,6 @@ export default {
     }),
     commonjs(),
     nodeResolve(),
-    globals(),
   ],
   external: ['react', 'react-dom']
 };
