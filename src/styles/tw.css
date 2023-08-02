@@ -4,9 +4,9 @@
 
 /* Category nested hover */
 .hover-hide-wrapper .hover-hide-item {
-    display: none;
+  display: none;
 }
 
-.hover-hide-wrapper:hover>.hover-hide-item {
-    display: block;
+.hover-hide-wrapper:hover > .hover-hide-item {
+  display: block;
 }
