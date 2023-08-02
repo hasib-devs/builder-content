@@ -1,14 +1,12 @@
-import React from 'react'
-
 const SocialButton = ({ data }) => {
-  const socialDesign = `pb-social-${data.shape} pb-social-${data.btn_size}`
+  const socialDesign = `pb-social-${data.shape} pb-social-${data.btn_size}`;
 
   return (
     <div className="pb-social-addon">
       <div className="pb-social-addon-content">
         <ul className={`pb-social-button pb-social-${socialDesign}`}>
           {data.social_item.map((value, key) => {
-            const classList = `pb-social-${value.style}`
+            const classList = `pb-social-${value.style}`;
             return (
               <li className={`pb-social-button-list repeater-${key}`} key={key}>
                 <a
@@ -21,12 +19,12 @@ const SocialButton = ({ data }) => {
                   <span>{value.socialtext}</span>
                 </a>
               </li>
-            )
+            );
           })}
         </ul>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default SocialButton
+export default SocialButton;

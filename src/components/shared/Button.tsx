@@ -1,5 +1,5 @@
 import classNames from 'classnames';
-import React, { MouseEventHandler } from 'react';
+import { MouseEventHandler } from 'react';
 
 type Props = {
   type?: 'button' | 'submit' | 'reset';
@@ -70,7 +70,12 @@ const Button = ({
     <button
       type={type}
       disabled={disabled}
-      className={classNames('button', colorClasses[color], className, (disabled || loading) && 'opacity-25')}
+      className={classNames(
+        'button',
+        colorClasses[color],
+        className,
+        (disabled || loading) && 'opacity-25'
+      )}
       onClick={onClick}
     >
       {loading && (
@@ -80,7 +85,14 @@ const Button = ({
           fill="none"
           viewBox="0 0 24 24"
         >
-          <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
+          <circle
+            className="opacity-25"
+            cx="12"
+            cy="12"
+            r="10"
+            stroke="currentColor"
+            strokeWidth="4"
+          ></circle>
           <path
             className="opacity-75"
             fill="currentColor"

@@ -1,25 +1,24 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import React from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 function Accordion(props) {
-  const { data } = props
+  const { data } = props;
 
   return (
     <div className="pb-accordion-addon">
       <div className="pb-accordion-addon-content">
         <div className="pb-accordion-items">
           {data.accordion_list.map((value, key) => {
-            const navigation_direction = data.navigation_direction || 'right'
+            const navigation_direction = data.navigation_direction || 'right';
             const activeClass =
               (key === 0 || data.openitem === 'show') &&
               data.openitem !== 'hide'
                 ? 'active'
-                : ''
+                : '';
             const panelStyle =
               (key !== 0 || data.openitem === 'hide') &&
               data.openitem !== 'show'
                 ? { display: 'none' }
-                : {}
+                : {};
 
             return (
               <div key={key} className={`pb-accordion-item repeater-${key}`}>
@@ -56,12 +55,12 @@ function Accordion(props) {
                   <div className="pb-accordion-content">{value.content}</div>
                 </div>
               </div>
-            )
+            );
           })}
         </div>
       </div>
     </div>
-  )
+  );
 }
 
-export default Accordion
+export default Accordion;

@@ -1,11 +1,10 @@
-import classNames from 'classnames'
-import React from 'react'
+import classNames from 'classnames';
 
 type Props = {
-  width?: number
-  height?: number
-  className?: string
-}
+  width?: number;
+  height?: number;
+  className?: string;
+};
 
 const PlaceHolderImage = ({ width = 42, height = 42, className }: Props) => {
   return (
@@ -39,7 +38,7 @@ const PlaceHolderImage = ({ width = 42, height = 42, className }: Props) => {
         strokeLinejoin="round"
       />
     </svg>
-  )
-}
+  );
+};
 
-export default PlaceHolderImage
+export default PlaceHolderImage;

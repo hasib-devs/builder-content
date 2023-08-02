@@ -1,12 +1,12 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
-import React, { createElement } from 'react'
-import _ from 'lodash'
-import classNames from 'classnames'
+import React, { createElement } from 'react';
+import _ from 'lodash';
+import classNames from 'classnames';
 
 const FeatureBox = ({ data }) => {
-  const headingSelector = data.heading_selector || 'h3'
-  const subheadingSelector = data.subheading_selector || 'h4'
-  const classList = `pb-btn-${data.style}`
+  const headingSelector = data.heading_selector || 'h3';
+  const subheadingSelector = data.subheading_selector || 'h4';
+  const classList = `pb-btn-${data.style}`;
 
   return (
     <div className="pb-addon pb-feature-box-addon">
@@ -25,7 +25,7 @@ const FeatureBox = ({ data }) => {
           data.layout !== 'seven' && <DefaultLayout />}
       </div>
     </div>
-  )
+  );
 
   function LayoutTwo() {
     return (
@@ -49,7 +49,7 @@ const FeatureBox = ({ data }) => {
           )}
         {data.text && <p className="pb-feature-box-text">{data.text}</p>}
       </div>
-    )
+    );
   }
 
   function LayoutThree() {
@@ -76,12 +76,12 @@ const FeatureBox = ({ data }) => {
           </div>
         )}
       </div>
-    )
+    );
   }
 
   function LayoutFour() {
-    const headingSelector = data.heading_selector || 'h3'
-    const subheadingSelector = data.subheading_selector || 'h4'
+    const headingSelector = data.heading_selector || 'h3';
+    const subheadingSelector = data.subheading_selector || 'h4';
 
     return (
       <div className="pb-addon pb-feature-box-addon feature-icontitle-wrap">
@@ -131,12 +131,12 @@ const FeatureBox = ({ data }) => {
           )}
         </div>
       </div>
-    )
+    );
   }
 
   function LayoutFive() {
-    const headingSelector = data.heading_selector || 'h3'
-    const subheadingSelector = data.subheading_selector || 'h4'
+    const headingSelector = data.heading_selector || 'h3';
+    const subheadingSelector = data.subheading_selector || 'h4';
 
     return (
       <div className="pb-addon pb-feature-box-addon feature-icon-top pb-clearfix">
@@ -186,12 +186,12 @@ const FeatureBox = ({ data }) => {
           )}
         </div>
       </div>
-    )
+    );
   }
 
   function LayoutSix() {
-    const headingSelector = data.heading_selector || 'h3'
-    const subheadingSelector = data.subheading_selector || 'h4'
+    const headingSelector = data.heading_selector || 'h3';
+    const subheadingSelector = data.subheading_selector || 'h4';
 
     return (
       <div className="pb-addon pb-feature-box-addon feature-icon-left pb-clearfix">
@@ -241,12 +241,12 @@ const FeatureBox = ({ data }) => {
           )}
         </div>
       </div>
-    )
+    );
   }
 
   function LayoutSeven() {
-    const headingSelector = data.heading_selector || 'h3'
-    const subheadingSelector = data.subheading_selector || 'h4'
+    const headingSelector = data.heading_selector || 'h3';
+    const subheadingSelector = data.subheading_selector || 'h4';
 
     return (
       <div className="pb-addon pb-feature-box-addon feature-icon-left pb-clearfix">
@@ -287,12 +287,12 @@ const FeatureBox = ({ data }) => {
           )}
         </div>
       </div>
-    )
+    );
   }
 
   function DefaultLayout() {
-    const headingSelector = data.heading_selector || 'h3'
-    const subheadingSelector = data.subheading_selector || 'h4'
+    const headingSelector = data.heading_selector || 'h3';
+    const subheadingSelector = data.subheading_selector || 'h4';
 
     return (
       <div className="pb-addon pb-feature-box-addon">
@@ -330,8 +330,8 @@ const FeatureBox = ({ data }) => {
           )}
         </div>
       </div>
-    )
+    );
   }
-}
+};
 
-export default FeatureBox
+export default FeatureBox;

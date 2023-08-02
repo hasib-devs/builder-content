@@ -1,22 +1,21 @@
-import React from 'react'
-import Slider from 'react-slick'
+import Slider from 'react-slick';
 
 function parseVideoUrl(videoUrl) {
-  const videoObj = new URL(videoUrl)
+  const videoObj = new URL(videoUrl);
 
   switch (videoObj.hostname) {
     case 'youtu.be':
-      return `//www.youtube.com/embed${videoObj.pathname.trim()}?&showinfo=0`
+      return `//www.youtube.com/embed${videoObj.pathname.trim()}?&showinfo=0`;
     case 'www.youtube.com':
     case 'youtube.com': {
-      const videoId = videoObj.searchParams.get('v')
-      return `//www.youtube.com/embed/${videoId}?&showinfo=0`
+      const videoId = videoObj.searchParams.get('v');
+      return `//www.youtube.com/embed/${videoId}?&showinfo=0`;
     }
     case 'www.vimeo.com':
     case 'vimeo.com':
-      return `//player.vimeo.com/video${videoObj.pathname.trim()}`
+      return `//player.vimeo.com/video${videoObj.pathname.trim()}`;
     default:
-      return ''
+      return '';
   }
 }
 
@@ -29,7 +28,7 @@ const Carousel = ({ data }) => {
     speed: data.animated_speed,
     slidesToShow: 1,
     slidesToScroll: 1,
-  }
+  };
 
   return (
     <div className="pb-carousel-addon">
@@ -37,10 +36,10 @@ const Carousel = ({ data }) => {
         <div className="pb-carousel stick-dots" data-addon-id={data.id}>
           <Slider {...settings}>
             {data.carosuel_list.map((value, key) => {
-              const videoUrl = value.video_url || ''
-              const videosrc = videoUrl ? parseVideoUrl(videoUrl) : ''
+              const videoUrl = value.video_url || '';
+              const videosrc = videoUrl ? parseVideoUrl(videoUrl) : '';
 
-              let ImageMedia
+              let ImageMedia;
               if (value.media_type === 'media_video' && videoUrl) {
                 ImageMedia = (
                   <div className="pb-video-slide">
@@ -52,9 +51,9 @@ const Carousel = ({ data }) => {
                       allowFullScreen
                     />
                   </div>
-                )
+                );
               } else if (value.imageupload) {
-                ImageMedia = <img src={value.imageupload.url} />
+                ImageMedia = <img src={value.imageupload.url} />;
               }
 
               // const selector = value.selector || "h2";
@@ -156,13 +155,13 @@ const Carousel = ({ data }) => {
                     </div>
                   </div>
                 </div>
-              )
+              );
             })}
           </Slider>
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Carousel
+export default Carousel;

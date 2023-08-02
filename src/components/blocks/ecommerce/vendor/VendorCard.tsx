@@ -1,15 +1,14 @@
-import PlaceHolderImage from '../../../../components/shared/Placeholder'
-import Rating from '../../../../components/shared/Rating'
-import StoreIcon from '../../../../components/shared/StoreIcon'
-import { Vendor } from '../../../../types'
-import { generateImageUrl } from '../../../../utils'
+import PlaceHolderImage from '../../../../components/shared/Placeholder';
+import Rating from '../../../../components/shared/Rating';
+import StoreIcon from '../../../../components/shared/StoreIcon';
+import { Vendor } from '../../../../types';
+import { generateImageUrl } from '../../../../utils';
 // import { useState } from 'react'
-import Image from 'next/image'
-import React from 'react'
+import Image from 'next/image';
 
 type Props = {
-  vendor: Vendor
-}
+  vendor: Vendor;
+};
 
 const VendorCard = ({ vendor }: Props) => {
   // const [isImageLoading, setIsImageLoading] = useState(true)
@@ -61,7 +60,7 @@ const VendorCard = ({ vendor }: Props) => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default VendorCard
+export default VendorCard;

@@ -1,31 +1,29 @@
-import React from 'react'
-
 const PieProgress = ({ data }) => {
-  let progress_size
+  let progress_size;
   if (typeof data.progress_size === 'object') {
-    progress_size = parseInt(data.progress_size.md)
+    progress_size = parseInt(data.progress_size.md);
   } else {
     progress_size = parseInt(data.progress_size)
       ? parseInt(data.progress_size)
-      : 150
+      : 150;
   }
 
-  let progress_percentage
+  let progress_percentage;
   if (typeof data.progress_percentage === 'object') {
-    progress_percentage = parseInt(data.progress_percentage.md)
+    progress_percentage = parseInt(data.progress_percentage.md);
   } else {
     progress_percentage = parseInt(data.progress_percentage)
       ? parseInt(data.progress_percentage)
-      : 75
+      : 75;
   }
 
-  let progress_width
+  let progress_width;
   if (typeof data.progress_width === 'object') {
-    progress_width = parseInt(data.progress_width.md)
+    progress_width = parseInt(data.progress_width.md);
   } else {
     progress_width = parseInt(data.progress_width)
       ? parseInt(data.progress_width)
-      : 5
+      : 5;
   }
 
   return (
@@ -59,7 +57,7 @@ const PieProgress = ({ data }) => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default PieProgress
+export default PieProgress;

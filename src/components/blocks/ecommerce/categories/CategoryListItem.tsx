@@ -1,11 +1,11 @@
-import { CategoryTree } from '../../../../types/catalog'
-import Link from 'next/link'
-import React from 'react'
-import { FiChevronRight } from 'react-icons/fi'
+import { CategoryTree } from '../../../../types/catalog';
+import Link from 'next/link';
+
+import { FiChevronRight } from 'react-icons/fi';
 
 type Props = {
-  category: CategoryTree
-}
+  category: CategoryTree;
+};
 
 const CategoryListItem = ({ category }: Props) => {
   return (
@@ -41,7 +41,7 @@ const CategoryListItem = ({ category }: Props) => {
         </li>
       )}
     </>
-  )
-}
+  );
+};
 
-export default CategoryListItem
+export default CategoryListItem;

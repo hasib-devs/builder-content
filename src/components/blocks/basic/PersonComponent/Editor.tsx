@@ -1,5 +1,3 @@
-import React from 'react'
-
 function PersonComponent({ data }) {
   const {
     person_layout,
@@ -11,13 +9,13 @@ function PersonComponent({ data }) {
     introtext,
     show_social,
     social_item,
-  } = data
+  } = data;
 
   const personImage = person_image && person_image.url && (
     <div className="pb-person-image">
       <img className="pb-person-addon-img" src={person_image.url} />
     </div>
-  )
+  );
 
   const personName = (
     <span className="pb-person-name">
@@ -33,15 +31,15 @@ function PersonComponent({ data }) {
         name
       )}
     </span>
-  )
+  );
 
   const personDesignation = designation && (
     <span className="pb-person-designation">{designation}</span>
-  )
-  const personEmail = email && <span className="pb-person-email">{email}</span>
+  );
+  const personEmail = email && <span className="pb-person-email">{email}</span>;
   const personIntrotext = introtext && (
     <span className="pb-person-introtext">{introtext}</span>
-  )
+  );
 
   const personSocial = show_social == 1 && (
     <ul className="pb-person-social">
@@ -55,7 +53,7 @@ function PersonComponent({ data }) {
         </li>
       ))}
     </ul>
-  )
+  );
 
   const getLayout = (layout) => {
     switch (layout) {
@@ -73,7 +71,7 @@ function PersonComponent({ data }) {
               {personSocial}
             </div>
           </>
-        )
+        );
 
       case 'three':
         return (
@@ -89,7 +87,7 @@ function PersonComponent({ data }) {
               {personSocial}
             </div>
           </div>
-        )
+        );
 
       case 'four':
         return (
@@ -105,7 +103,7 @@ function PersonComponent({ data }) {
               {personSocial}
             </div>
           </div>
-        )
+        );
 
       case 'five':
         return (
@@ -121,7 +119,7 @@ function PersonComponent({ data }) {
               </div>
             </div>
           </div>
-        )
+        );
       default:
         return (
           <>
@@ -136,9 +134,9 @@ function PersonComponent({ data }) {
               {personSocial}
             </div>
           </>
-        )
+        );
     }
-  }
+  };
 
   return (
     <div className="pb-person-addon">
@@ -146,7 +144,7 @@ function PersonComponent({ data }) {
         {getLayout(person_layout)}
       </div>
     </div>
-  )
+  );
 }
 
-export default PersonComponent
+export default PersonComponent;

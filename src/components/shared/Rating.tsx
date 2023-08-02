@@ -1,22 +1,22 @@
-import React, { useState } from 'react'
-import { BsStarFill, BsStarHalf, BsStar } from 'react-icons/bs'
-import { IconType } from 'react-icons/lib'
-import { twMerge } from 'tailwind-merge'
+import React, { useState } from 'react';
+import { BsStarFill, BsStarHalf, BsStar } from 'react-icons/bs';
+import { IconType } from 'react-icons/lib';
+import { twMerge } from 'tailwind-merge';
 
 interface Props {
-  className?: string
-  count: number
-  value: number
-  color?: string
-  hoverColor?: string
-  activeColor?: string
-  size?: number
-  edit?: boolean
-  isHalf?: boolean
-  onChange?: (value: number) => void
-  emptyIcon?: IconType
-  halfIcon?: IconType
-  fullIcon?: IconType
+  className?: string;
+  count: number;
+  value: number;
+  color?: string;
+  hoverColor?: string;
+  activeColor?: string;
+  size?: number;
+  edit?: boolean;
+  isHalf?: boolean;
+  onChange?: (value: number) => void;
+  emptyIcon?: IconType;
+  halfIcon?: IconType;
+  fullIcon?: IconType;
 }
 
 const Rating: React.FC<Props> = ({
@@ -34,58 +34,58 @@ const Rating: React.FC<Props> = ({
   halfIcon = BsStarHalf,
   fullIcon = BsStarFill,
 }) => {
-  const [hoverValue, setHoverValue] = useState<number | undefined>(undefined)
+  const [hoverValue, setHoverValue] = useState<number | undefined>(undefined);
 
   const handleMouseMove = (index: number) => {
     if (!edit) {
-      return
+      return;
     }
-    setHoverValue(index)
-  }
+    setHoverValue(index);
+  };
 
   const handleMouseLeave = () => {
     if (!edit) {
-      return
+      return;
     }
-    setHoverValue(undefined)
-  }
+    setHoverValue(undefined);
+  };
 
   const handleClick = (index: number) => {
     if (!edit) {
-      return
+      return;
     }
     if (onChange) {
-      onChange(index + 1)
+      onChange(index + 1);
     }
-  }
+  };
 
   const getColor = (index: number) => {
     if (hoverValue !== undefined) {
       if (index <= hoverValue) {
-        return hoverColor
+        return hoverColor;
       }
     }
     if (value > index) {
-      return activeColor
+      return activeColor;
     }
-    return color
-  }
+    return color;
+  };
 
-  const stars: any[] = []
+  const stars: any[] = [];
 
   for (let i = 0; i < count; i++) {
-    let star
+    let star;
     if (isHalf && value - i > 0 && value - i < 1) {
-      star = halfIcon
+      star = halfIcon;
     } else if (i < value) {
-      star = fullIcon
+      star = fullIcon;
     } else {
-      star = emptyIcon
+      star = emptyIcon;
     }
 
     if (hoverValue !== undefined) {
       if (i <= hoverValue) {
-        star = fullIcon
+        star = fullIcon;
       }
     }
 
@@ -102,14 +102,14 @@ const Rating: React.FC<Props> = ({
           color: getColor(i),
         })}
       </div>
-    )
+    );
   }
 
   return (
     <div className={twMerge('flex items-center gap-0.5', className)}>
       {stars}
     </div>
-  )
-}
+  );
+};
 
-export default Rating
+export default Rating;

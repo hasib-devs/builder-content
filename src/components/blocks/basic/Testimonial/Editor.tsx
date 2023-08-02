@@ -1,5 +1,4 @@
-import React from 'react'
-import ReactHtmlParser from 'react-html-parser'
+import ReactHtmlParser from 'react-html-parser';
 
 const Testimonial = ({ data }) => {
   return (
@@ -179,7 +178,7 @@ const Testimonial = ({ data }) => {
         )}
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Testimonial
+export default Testimonial;

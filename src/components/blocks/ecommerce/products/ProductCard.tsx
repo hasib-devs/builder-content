@@ -1,17 +1,17 @@
-import Button from '../../../shared/Button'
-import LinkButton from '../../../shared/LinkButton'
-import Rating from '../../../shared/Rating'
+import Button from '../../../shared/Button';
+import LinkButton from '../../../shared/LinkButton';
+import Rating from '../../../shared/Rating';
 
-import { Product } from '../../../../types/catalog'
-import { formatCurrency, generateImageUrl } from '../../../../utils'
-import Image from 'next/image'
-import React, { FC, MouseEvent } from 'react'
-import { FiShoppingCart } from 'react-icons/fi'
-import PlaceHolderImage from '../../../shared/Placeholder'
+import { Product } from '../../../../types/catalog';
+import { formatCurrency, generateImageUrl } from '../../../../utils';
+import Image from 'next/image';
+import { FC, MouseEvent } from 'react';
+import { FiShoppingCart } from 'react-icons/fi';
+import PlaceHolderImage from '../../../shared/Placeholder';
 
 interface ProductCardProps {
-  layout?: 'vertical' | 'horizontal'
-  product: Product
+  layout?: 'vertical' | 'horizontal';
+  product: Product;
 }
 
 const ProductCard: FC<ProductCardProps> = ({
@@ -19,9 +19,9 @@ const ProductCard: FC<ProductCardProps> = ({
   product,
 }: ProductCardProps) => {
   const handleOnClick = (e: MouseEvent) => {
-    e.stopPropagation()
+    e.stopPropagation();
     // router.push(`/products/${product.id}`);
-  }
+  };
 
   if (layout === 'horizontal') {
     return (
@@ -78,7 +78,7 @@ const ProductCard: FC<ProductCardProps> = ({
           </div>
         </div>
       </div>
-    )
+    );
   }
 
   return (
@@ -155,7 +155,7 @@ const ProductCard: FC<ProductCardProps> = ({
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default ProductCard
+export default ProductCard;

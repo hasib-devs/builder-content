@@ -1,14 +1,13 @@
 // import StoreCardLoader from '../../../../components/loaders/StoreCardLoader'
-import classNames from 'classnames'
-import { useState } from 'react'
+import classNames from 'classnames';
+import { useState } from 'react';
 // import LinkButton from "../../shared/LinkButton";
-import VendorCard from './VendorCard'
-import React from 'react'
+import VendorCard from './VendorCard';
 
 const VendorSection = () => {
-  const [filter, setFilter] = useState('popular')
-  const stores: any = { data: [] }
-  const isLoading = false
+  const [filter, setFilter] = useState('popular');
+  const stores: any = { data: [] };
+  const isLoading = false;
 
   return (
     <div className="container">
@@ -67,7 +66,7 @@ const VendorSection = () => {
             stores?.data
               ?.filter((_, index) => index < 8)
               .map((store, index) => {
-                return <VendorCard vendor={store} key={index} />
+                return <VendorCard vendor={store} key={index} />;
               })
           )}
         </div>
@@ -76,7 +75,7 @@ const VendorSection = () => {
         <LinkButton href="/stores">View More</LinkButton>
       </div> */}
     </div>
-  )
-}
+  );
+};
 
-export default VendorSection
+export default VendorSection;

@@ -1,6 +1,5 @@
 import classNames from 'classnames';
 import Link from 'next/link';
-import React from 'react';
 import { UrlObject } from 'url';
 
 type Props = {
@@ -32,7 +31,12 @@ type Props = {
   className?: string;
 };
 
-const LinkButton = ({ color = 'primary', href, children, className = '' }: Props) => {
+const LinkButton = ({
+  color = 'primary',
+  href,
+  children,
+  className = '',
+}: Props) => {
   const colorClasses = {
     amber: 'bg-amber-500 hover:bg-amber-600 text-gray-800',
     blue: 'bg-blue-500 hover:bg-blue-600 text-white',
@@ -60,7 +64,8 @@ const LinkButton = ({ color = 'primary', href, children, className = '' }: Props
   return (
     <Link
       href={href}
-      className={classNames('link-button', colorClasses[color], className)}>
+      className={classNames('link-button', colorClasses[color], className)}
+    >
       {children}
     </Link>
   );

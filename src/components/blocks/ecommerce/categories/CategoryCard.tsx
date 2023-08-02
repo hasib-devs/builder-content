@@ -1,13 +1,12 @@
-import { Category } from '../.././../../types/catalog'
-import Image from 'next/image'
-import { generateImageUrl } from '../.././../../utils'
-import Link from 'next/link'
-import PlaceHolderImage from '../../../shared/Placeholder'
-import React from 'react'
+import { Category } from '../.././../../types/catalog';
+import Image from 'next/image';
+import { generateImageUrl } from '../.././../../utils';
+import Link from 'next/link';
+import PlaceHolderImage from '../../../shared/Placeholder';
 
 type Props = {
-  category: Category
-}
+  category: Category;
+};
 
 const CategoryCard = ({ category }: Props) => {
   return (
@@ -35,7 +34,7 @@ const CategoryCard = ({ category }: Props) => {
         </Link>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default CategoryCard
+export default CategoryCard;

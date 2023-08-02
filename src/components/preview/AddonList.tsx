@@ -1,9 +1,8 @@
-import React from 'react'
-import Addon from './Addon'
-import InnerRow from './InnerRow'
+import Addon from './Addon';
+import InnerRow from './InnerRow';
 
 const AddonList = ({ addons }) => {
-  const addonsClass = 'pb-builder-addons'
+  const addonsClass = 'pb-builder-addons';
   return (
     <div className={addonsClass}>
       {addons.map(
@@ -22,7 +21,7 @@ const AddonList = ({ addons }) => {
           )
       )}
     </div>
-  )
-}
+  );
+};
 
-export default AddonList
+export default AddonList;

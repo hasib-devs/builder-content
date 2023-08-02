@@ -1,22 +1,20 @@
-import React from 'react'
-
 const VideoPopup = ({ data }) => {
-  let video_alignment = ''
+  let video_alignment = '';
 
   if (data.video_align['md']) {
     video_alignment += data.video_align['md']
       ? 'md' + data.video_align['md'] + ' '
-      : 'mdvideo_center '
+      : 'mdvideo_center ';
   }
   if (data.video_align['sm']) {
     video_alignment += data.video_align['sm']
       ? 'sm' + data.video_align['sm'] + ' '
-      : ' smvideo_center '
+      : ' smvideo_center ';
   }
   if (data.video_align['xs']) {
     video_alignment += data.video_align['xs']
       ? 'xs' + data.video_align['xs'] + ' '
-      : ' xsvideo_center '
+      : ' xsvideo_center ';
   }
 
   return (
@@ -48,7 +46,7 @@ const VideoPopup = ({ data }) => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default VideoPopup
+export default VideoPopup;

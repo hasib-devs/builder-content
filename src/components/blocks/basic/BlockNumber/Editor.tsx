@@ -1,16 +1,15 @@
-import React from 'react'
-import { FC } from 'react'
+import { FC } from 'react';
 
 export interface WppbBlockNumberProps {
   data: {
-    number?: string
-    number_title?: string
-    number_description?: string
-  }
+    number?: string;
+    number_title?: string;
+    number_description?: string;
+  };
 }
 
 const BlockNumber: FC<WppbBlockNumberProps> = ({ data }) => {
-  const { number, number_title, number_description } = data
+  const { number, number_title, number_description } = data;
 
   return (
     <div className="pb-blocknumber-addon">
@@ -34,7 +33,7 @@ const BlockNumber: FC<WppbBlockNumberProps> = ({ data }) => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default BlockNumber
+export default BlockNumber;

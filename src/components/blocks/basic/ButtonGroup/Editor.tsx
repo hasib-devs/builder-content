@@ -1,14 +1,12 @@
-import React from 'react'
-
 const ButtonGroup = ({ data }) => {
   return (
     <div className="pb-button-group-addon">
       <div className="pb-button-addon-content">
         {data.button_item.map((value, key) => {
-          let classList = ''
-          classList += ' pb-btn-' + value.style
-          classList += ' pb-btn-' + value.shape
-          classList += ' pb-btn-' + value.btn_size
+          let classList = '';
+          classList += ' pb-btn-' + value.style;
+          classList += ' pb-btn-' + value.shape;
+          classList += ' pb-btn-' + value.btn_size;
 
           return (
             <div className={`pb-button-group repeater-${key}`} key={key}>
@@ -31,11 +29,11 @@ const ButtonGroup = ({ data }) => {
                 </a>
               )}
             </div>
-          )
+          );
         })}
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default ButtonGroup
+export default ButtonGroup;

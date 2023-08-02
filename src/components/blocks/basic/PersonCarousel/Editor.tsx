@@ -1,11 +1,10 @@
-import React from 'react'
-import Slider from 'react-slick'
+import Slider from 'react-slick';
 
 const PersonCarousel = ({ data }) => {
-  const column = data.column ? data.column : '1'
+  const column = data.column ? data.column : '1';
   const controlNavStyle = data.control_nav_style
     ? data.control_nav_style
-    : 'nav_style1'
+    : 'nav_style1';
 
   const settings = {
     dots: Boolean(Number(data.control_dots)),
@@ -16,7 +15,7 @@ const PersonCarousel = ({ data }) => {
 
     slidesToShow: 1,
     slidesToScroll: 1,
-  }
+  };
 
   return (
     <div className="pb-person-addon">
@@ -143,7 +142,7 @@ const PersonCarousel = ({ data }) => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default PersonCarousel
+export default PersonCarousel;

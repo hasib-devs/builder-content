@@ -1,7 +1,5 @@
-import React from 'react'
-
 function Heading({ data }) {
-  const TitleSelector = data.title_selector || 'h2'
+  const TitleSelector = data.title_selector || 'h2';
 
   return (
     <div className="pb-headline-addon">
@@ -21,7 +19,7 @@ function Heading({ data }) {
         )}
       </div>
     </div>
-  )
+  );
 }
 
-export default Heading
+export default Heading;

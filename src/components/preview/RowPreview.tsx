@@ -1,23 +1,22 @@
-import { useEffect } from 'react'
-import { CssGenerator } from '../../helpers/previewCssGenerator'
-import ColumnPreview from './ColumnPreview'
-import page_data from './../../page_data'
-import { VideoBackground } from '../../helpers/VideoBackground'
-import React from 'react'
+import { useEffect } from 'react';
+import { CssGenerator } from '../../helpers/previewCssGenerator';
+import ColumnPreview from './ColumnPreview';
+import page_data from './../../page_data';
+import { VideoBackground } from '../../helpers/VideoBackground';
 
 const RowPreview = ({ row, rowIndex, id }) => {
   useEffect(() => {
-    CssGenerator(row, 'row', 'setinline')
-  }, [])
+    CssGenerator(row, 'row', 'setinline');
+  }, []);
 
-  const { settings } = row
+  const { settings } = row;
 
-  const overClass = ['pb-row-parent']
+  const overClass = ['pb-row-parent'];
   if (!row.visibility) {
-    overClass.push('pb-builder-row-disable')
+    overClass.push('pb-builder-row-disable');
   } // Disable Class
   if (settings && settings.row_class) {
-    overClass.push(settings.row_class)
+    overClass.push(settings.row_class);
   } // Extra Row Class
 
   // Animation
@@ -25,50 +24,50 @@ const RowPreview = ({ row, rowIndex, id }) => {
     key: id,
     id: settings && settings.row_id ? settings.row_id : null,
     'data-row-index': rowIndex,
-  }
+  };
   if (
     settings &&
     typeof settings.row_animation !== 'undefined' &&
     settings.row_animation.itemOpen
   ) {
     if (settings.row_animation.name) {
-      overClass.push('pb-wow', 'pb-animated', settings.row_animation.name)
+      overClass.push('pb-wow', 'pb-animated', settings.row_animation.name);
     }
     if (settings.row_animation.delay) {
-      attribute['data-wow-delay'] = settings.row_animation.delay + 'ms'
+      attribute['data-wow-delay'] = settings.row_animation.delay + 'ms';
     }
     if (settings.row_animation.duration) {
-      attribute['data-wow-duration'] = settings.row_animation.duration + 'ms'
+      attribute['data-wow-duration'] = settings.row_animation.duration + 'ms';
     }
   }
 
-  const rowContainer = ['pb-container']
+  const rowContainer = ['pb-container'];
   if (
     settings &&
     settings.row_screen &&
     settings.row_screen == 'row-container-stretch'
   ) {
-    rowContainer.push('pb-container-full')
+    rowContainer.push('pb-container-full');
   }
   if (
     settings &&
     settings.row_screen &&
     settings.row_screen == 'container-stretch-no-gutter'
   ) {
-    rowContainer.push('pb-container-full', 'pb-contaner-no-gutter')
+    rowContainer.push('pb-container-full', 'pb-contaner-no-gutter');
   }
   if (!settings || settings.row_screen === 'row-default') {
-    rowContainer.push('pb-container-row-default pb-row-' + row.id)
+    rowContainer.push('pb-container-row-default pb-row-' + row.id);
   } else {
-    overClass.push('pb-row-' + row.id)
+    overClass.push('pb-row-' + row.id);
   }
 
   const shapeName =
-    settings && settings['row_shape'] ? settings.row_shape.shapeStyle : ''
+    settings && settings['row_shape'] ? settings.row_shape.shapeStyle : '';
   const shapeNameBottom =
     settings && settings['row_shape_bottom']
       ? settings.row_shape_bottom.shapeStyle
-      : ''
+      : '';
 
   return (
     <div className="pb-row-placeholder">
@@ -149,7 +148,7 @@ const RowPreview = ({ row, rowIndex, id }) => {
 
       <div className="addon-placeholder-bottom"></div>
     </div>
-  )
-}
+  );
+};
 
-export default RowPreview
+export default RowPreview;

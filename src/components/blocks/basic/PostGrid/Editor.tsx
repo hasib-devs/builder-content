@@ -1,5 +1,3 @@
-import React from 'react'
-
 const PostGrid = () => {
   return (
     <div className="pb-posts-addon">
@@ -35,7 +33,7 @@ const PostGrid = () => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default PostGrid
+export default PostGrid;
