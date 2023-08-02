@@ -1,14 +1,31 @@
 // import StoreCardLoader from '../../../../components/loaders/StoreCardLoader'
 import classNames from 'classnames';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 // import LinkButton from "../../shared/LinkButton";
 import VendorCard from './VendorCard';
+import { useBuilderConfigContext } from '@/contexts/config-context';
 
 const VendorSection = () => {
   const [filter, setFilter] = useState('popular');
-  const stores: any = { data: [] };
-  const isLoading = false;
+  const [stores, setStores] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);
+  const { axios, catalogConf } = useBuilderConfigContext();
 
+  const fetchVendors = async () => {
+    try {
+      const res = await axios.get(
+        `api/v1/vendors?filter=${filter}`,
+        catalogConf
+      );
+
+      setStores(res.data.data);
+      setIsLoading(false);
+    } catch (error) {}
+  };
+
+  useEffect(() => {
+    fetchVendors();
+  }, [filter]);
   return (
     <div className="container">
       <div className="">
@@ -63,7 +80,7 @@ const VendorSection = () => {
             // <StoreCardLoader count={8} />
             <p>Loading</p>
           ) : (
-            stores?.data
+            stores
               ?.filter((_, index) => index < 8)
               .map((store, index) => {
                 return <VendorCard vendor={store} key={index} />;

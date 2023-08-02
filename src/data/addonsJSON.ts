@@ -28,8 +28,8 @@ import { pb_carousel } from "./blocks/basic/pb_carousel";
 import { pb_text_block } from "./blocks/basic/pb_text_block";
 import { category_grid } from "./blocks/ecommerce/category_grid";
 import { category_list } from "./blocks/ecommerce/category_list";
-// import { product_grid } from "./blocks/ecommerce/product_grid";
-// import { vendor_section } from "./blocks/ecommerce/vendor_section";
+import { product_grid } from "./blocks/ecommerce/product_grid";
+import { vendor_section } from "./blocks/ecommerce/vendor_section";
 
 export const addonGroups = {
   basic: "Basic",
@@ -43,8 +43,8 @@ export const addonsJSON = {
   // Ecommerce
   category_grid,
   category_list,
-  // product_grid,
-  // vendor_section,
+  product_grid,
+  vendor_section,
   // Basic
   pb_accordion,
   pb_alert,
