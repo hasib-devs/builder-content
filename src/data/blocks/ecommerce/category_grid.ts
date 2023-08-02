@@ -29,7 +29,7 @@ export const category_grid = {
       max_item: {
         type: "number",
         title: "Max Item",
-        std: "12",
+        std: "10",
         depends: [["show_custom_items", "!=", "1"]],
       },
     },

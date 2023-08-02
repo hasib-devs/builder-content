@@ -1,5 +1,6 @@
 import { store } from "../store";
 
+export const storageURL = "https://storage.googleapis.com/dokan-dev"
 export const formatCurrency = (value: number, fractionDigit = 0) => {
   return new Intl.NumberFormat("en-US", {
     style: "currency",
@@ -13,5 +14,5 @@ export const generateImageUrl = (path: string) => {
   if (path.match(/^(http|https):\/\//)) {
     return path;
   }
-  return `/${path}`;
+  return `${storageURL}/${path}`;
 };

@@ -4,7 +4,6 @@ import Rating from '../../../shared/Rating';
 
 import { Product } from '../../../../types/catalog';
 import { formatCurrency, generateImageUrl } from '../../../../utils';
-import Image from 'next/image';
 import { FC, MouseEvent } from 'react';
 import { FiShoppingCart } from 'react-icons/fi';
 import PlaceHolderImage from '../../../shared/Placeholder';
@@ -31,7 +30,8 @@ const ProductCard: FC<ProductCardProps> = ({
       >
         <div>
           <div className="rounded border bg-gray-100">
-            <Image
+            <img
+              className="max-w-full h-auto"
               src={
                 product.media[0]?.path
                   ? generateImageUrl(product.media[0].path)
@@ -92,12 +92,13 @@ const ProductCard: FC<ProductCardProps> = ({
           <div className="overflow-hidden rounded border text-center">
             {product.media.length && product.media[0]?.path ? (
               <div>
-                {/* <Image
+                <img
+                  className="max-w-full h-auto"
                   src={generateImageUrl(product.media[0].path)}
                   height={400}
                   width={400}
                   alt="product-image"
-                /> */}
+                />
               </div>
             ) : (
               <div className="flex h-[265px] w-full items-center justify-center border-gray-200 bg-[#F8F9F8] ">

@@ -1,19 +1,20 @@
-import { Category } from '../.././../../types/catalog';
-import Image from 'next/image';
-import { generateImageUrl } from '../.././../../utils';
+import { Category } from '@/types/catalog';
+import { generateImageUrl } from '@/utils';
 import Link from 'next/link';
 import PlaceHolderImage from '../../../shared/Placeholder';
+import { FC } from 'react';
 
 type Props = {
   category: Category;
 };
 
-const CategoryCard = ({ category }: Props) => {
+const CategoryCard: FC<Props> = ({ category }) => {
   return (
     <div>
       {category.media.length && category.media[0]?.path ? (
         <div className="relative mx-auto h-[150px] w-[150px] overflow-hidden rounded-full border">
-          <Image
+          <img
+            className="max-w-full h-auto"
             src={generateImageUrl(category.media[0]?.path)}
             alt={category.name}
             width={150}

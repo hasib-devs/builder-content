@@ -4,7 +4,6 @@ import StoreIcon from '../../../../components/shared/StoreIcon';
 import { Vendor } from '../../../../types';
 import { generateImageUrl } from '../../../../utils';
 // import { useState } from 'react'
-import Image from 'next/image';
 
 type Props = {
   vendor: Vendor;
@@ -22,7 +21,8 @@ const VendorCard = ({ vendor }: Props) => {
       <div className="relative overflow-hidden text-center">
         {vendor?.banner ? (
           <div>
-            <Image
+            <img
+              className="max-w-full h-auto"
               src={generateImageUrl(vendor?.banner?.path)}
               height={100}
               width={280}
@@ -39,11 +39,11 @@ const VendorCard = ({ vendor }: Props) => {
       <div className="p-5">
         {vendor?.logo ? (
           <div>
-            <Image
+            <img
               src={generateImageUrl(vendor?.logo?.path)}
               height={45}
               width={45}
-              className="rounded-full"
+              className="rounded-full max-w-full h-auto"
               alt="store-logo"
             />
           </div>
