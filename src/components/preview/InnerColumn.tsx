@@ -28,9 +28,9 @@ const InnerColumn = ({ index, innerRow, column }) => {
     overClass.push(settings.col_class);
   } // Extra Row Class
 
-  if (index < innerRow.columns.length - 1) {
-    overClass.push('ui-resizable');
-  }
+  // if (index < innerRow.columns.length - 1) {
+  //   overClass.push('ui-resizable');
+  // }
 
   // Animation
   const attribute = {
@@ -55,11 +55,7 @@ const InnerColumn = ({ index, innerRow, column }) => {
 
   return (
     <div {...attribute} className={overClass.join(' ')}>
-      <div
-        className={
-          'pb-column' + (_.isEmpty(column.addons) ? ' pb-col-empty' : '')
-        }
-      >
+      <div className={'pb-column'}>
         <InnerAddonList key={column.id} addons={column.addons} />
       </div>
     </div>

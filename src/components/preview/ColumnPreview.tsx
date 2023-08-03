@@ -30,9 +30,9 @@ const ColumnPreview = ({ row, column, index }) => {
   if (settings.col_class) {
     overClass.push(settings.col_class);
   }
-  if (index < row.columns.length - 1) {
-    overClass.push('ui-resizable');
-  }
+  // if (index < row.columns.length - 1) {
+  //   overClass.push('ui-resizable');
+  // }
 
   // Animation
   const attribute = {
@@ -58,11 +58,7 @@ const ColumnPreview = ({ row, column, index }) => {
   return (
     <div {...attribute} className={overClass.join(' ')}>
       <div style={{ width: '100%', paddingLeft: '0px', paddingRight: '0px' }}>
-        <div
-          className={
-            'pb-column' + (_.isEmpty(column.addons) ? ' pb-col-empty' : '')
-          }
-        >
+        <div className={'pb-column'}>
           <AddonList addons={column.addons} key={column.id} />
         </div>
       </div>
