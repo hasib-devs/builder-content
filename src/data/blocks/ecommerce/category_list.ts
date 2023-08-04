@@ -29,7 +29,9 @@ export const category_list = {
         std: "",
         depends: [["show_custom_items", "=", "1"]],
         multiple: true,
-        fetch_url: "https://hasib.dokandev.com/api/v1/categories",
+        fetch_url: "/api/v1/categories",
+        valueField: "id",
+        labelField: "name",
         istree: true,
       },
       max_item: {
