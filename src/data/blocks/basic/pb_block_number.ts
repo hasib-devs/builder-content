@@ -1,4 +1,4 @@
-import BlockNumber from "../../components/blocks/basic/BlockNumber/Editor";
+import BlockNumber from "../../../components/blocks/basic/BlockNumber/Editor";
 
 export const pb_block_number = {
   type: "content",

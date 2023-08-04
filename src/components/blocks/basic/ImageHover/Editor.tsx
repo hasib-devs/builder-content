@@ -1,5 +1,3 @@
-import React from 'react'
-
 function ImageHover({
   data: {
     title,
@@ -19,9 +17,9 @@ function ImageHover({
     button_text,
   },
 }) {
-  const HeadingTag = heading_selector || 'h3'
-  const SubHeadingTag = subheading_selector || 'h4'
-  const imageHoverEffect = image_hover_effect || 'slideleft'
+  const HeadingTag = heading_selector || 'h3';
+  const SubHeadingTag = subheading_selector || 'h4';
+  const imageHoverEffect = image_hover_effect || 'slideleft';
 
   const dataTitle =
     title_show &&
@@ -38,7 +36,7 @@ function ImageHover({
       >
         {title}
       </HeadingTag>
-    ))
+    ));
 
   const dataSubTitle = subtitle_show && subtitle && (
     <SubHeadingTag
@@ -46,7 +44,7 @@ function ImageHover({
     >
       {subtitle}
     </SubHeadingTag>
-  )
+  );
 
   const buttonContent = button_show && button_link.link && (
     <a
@@ -63,7 +61,7 @@ function ImageHover({
         <i className={btn_icon_list} />
       )}
     </a>
-  )
+  );
 
   const layoutRender = {
     three: (
@@ -125,7 +123,7 @@ function ImageHover({
         {buttonContent}
       </div>
     ),
-  }
+  };
 
   return (
     <div
@@ -141,7 +139,7 @@ function ImageHover({
         {layoutRender[layout] || layoutRender['default']}
       </div>
     </div>
-  )
+  );
 }
 
-export default ImageHover
+export default ImageHover;

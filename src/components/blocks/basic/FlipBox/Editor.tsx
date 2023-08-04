@@ -1,8 +1,8 @@
-import React from "react";
+import React from 'react';
 
 function FlipBox({ data }) {
-  const frontHeading = data.front_heading_selector || "h4";
-  const backHeading = data.back_heading_selector || "h4";
+  const frontHeading = data.front_heading_selector || 'h4';
+  const backHeading = data.back_heading_selector || 'h4';
   let dataFrontIntro;
   let dataBackIntro;
   let dataFrontTitle;
@@ -15,7 +15,7 @@ function FlipBox({ data }) {
   if (data.front_title) {
     dataFrontTitle = React.createElement(
       frontHeading,
-      { className: "pb-flip-front-title" },
+      { className: 'pb-flip-front-title' },
       data.front_title
     );
   }
@@ -47,7 +47,7 @@ function FlipBox({ data }) {
   if (data.back_title) {
     dataBackTitle = React.createElement(
       backHeading,
-      { className: "pb-flip-back-title" },
+      { className: 'pb-flip-back-title' },
       data.back_title
     );
   }
@@ -84,15 +84,15 @@ function FlipBox({ data }) {
     );
   }
 
-  flipStyle = data.flip_style || "rotate_style";
+  flipStyle = data.flip_style || 'rotate_style';
 
-  if (flipStyle !== "") {
-    if (flipStyle === "slide_style") {
-      flipStyle = "slide-flipbox";
-    } else if (flipStyle === "fade_style") {
-      flipStyle = "fade-flipbox";
-    } else if (flipStyle === "threeD_style") {
-      flipStyle = "threeD_style";
+  if (flipStyle !== '') {
+    if (flipStyle === 'slide_style') {
+      flipStyle = 'slide-flipbox';
+    } else if (flipStyle === 'fade_style') {
+      flipStyle = 'fade-flipbox';
+    } else if (flipStyle === 'threeD_style') {
+      flipStyle = 'threeD_style';
     }
   }
 
@@ -101,7 +101,7 @@ function FlipBox({ data }) {
       <div
         className={`pb-flip-box-content ${data.flip_style} ${data.flip_direction} flipon-${data.flip_bhave}`}
       >
-        {flipStyle === "threeD_style" ? (
+        {flipStyle === 'threeD_style' ? (
           <div className="threeD-content-wrap flip">
             <div className="threeD-item">
               <div className="threeD-flip-front">

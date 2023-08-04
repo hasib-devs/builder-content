@@ -1,4 +1,4 @@
-import Accordion from "../../components/blocks/basic/Accordion/Editor";
+import Accordion from "../../../components/blocks/basic/Accordion/Editor";
 
 export const pb_accordion = {
   type: "content",

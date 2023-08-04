@@ -1,20 +1,18 @@
-import React from 'react'
-
 export interface WppbButtonProps {
   data: {
-    style: string
-    shape: string
-    btn_size: string
-    fullwidth_button: string
+    style: string;
+    shape: string;
+    btn_size: string;
+    fullwidth_button: string;
     button_link: {
-      link?: string
-      window?: boolean
-      nofollow?: boolean
-    }
-    icon_position: string
-    icon_list: string
-    button_text: string
-  }
+      link?: string;
+      window?: boolean;
+      nofollow?: boolean;
+    };
+    icon_position: string;
+    icon_list: string;
+    button_text: string;
+  };
 }
 
 const Button = ({ data }: WppbButtonProps) => {
@@ -27,9 +25,9 @@ const Button = ({ data }: WppbButtonProps) => {
     icon_position,
     icon_list,
     button_text,
-  } = data
+  } = data;
 
-  const classList = `pb-btn-${style} pb-btn-${shape} pb-btn-${btn_size} pb-btn-${fullwidth_button}`
+  const classList = `pb-btn-${style} pb-btn-${shape} pb-btn-${btn_size} pb-btn-${fullwidth_button}`;
 
   return (
     <div className="pb-addon pb-button-addon">
@@ -52,8 +50,8 @@ const Button = ({ data }: WppbButtonProps) => {
         )}
       </div>
     </div>
-  )
-}
+  );
+};
 
 // Button.defaultProps = {
 //   data: {
@@ -72,4 +70,4 @@ const Button = ({ data }: WppbButtonProps) => {
 //   },
 // };
 
-export default Button
+export default Button;

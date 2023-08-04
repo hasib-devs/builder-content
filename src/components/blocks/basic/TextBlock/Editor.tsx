@@ -1,10 +1,8 @@
-import React from 'react'
-
 const TextBlock = ({ data }) => {
-  const drop_cap = data.drop_cap ? 'pb-text-block-drop' : ''
+  const drop_cap = data.drop_cap ? 'pb-text-block-drop' : '';
 
   if (!data.text) {
-    return null
+    return null;
   }
 
   return (
@@ -13,7 +11,7 @@ const TextBlock = ({ data }) => {
         <div dangerouslySetInnerHTML={{ __html: data.text }}></div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default TextBlock
+export default TextBlock;

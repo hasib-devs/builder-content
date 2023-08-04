@@ -1,5 +1,3 @@
-import React from 'react'
-
 const PricingTable = ({ data }) => {
   //   let featured_check = data.featured_check === "1" ? "pb-pricing-featured" : "";
 
@@ -27,7 +25,7 @@ const PricingTable = ({ data }) => {
         </div>
       )}
     </div>
-  )
+  );
 
   const features = (data) => (
     <div className="pb-pricing-feature">
@@ -40,7 +38,7 @@ const PricingTable = ({ data }) => {
         </div>
       ))}
     </div>
-  )
+  );
 
   const button = (data) =>
     data.btn_link.link && (
@@ -58,7 +56,7 @@ const PricingTable = ({ data }) => {
           <i className={data.icon_list}></i>
         )}
       </a>
-    )
+    );
 
   return (
     <div className="pb-pricing-addon">
@@ -118,7 +116,7 @@ const PricingTable = ({ data }) => {
         )}
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default PricingTable
+export default PricingTable;

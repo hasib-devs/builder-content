@@ -1,5 +1,3 @@
-import React from 'react'
-
 const AnimatedNumber = ({ data }) => {
   const renderCounterTitle = () => {
     if (data.counter_title) {
@@ -12,18 +10,20 @@ const AnimatedNumber = ({ data }) => {
           >
             {data.counter_title}
           </div>
-        )
+        );
       } else {
-        return <div className="pb-count-number-title">{data.counter_title}</div>
+        return (
+          <div className="pb-count-number-title">{data.counter_title}</div>
+        );
       }
     }
-    return null
-  }
+    return null;
+  };
 
   const renderDigit = () => {
     if (data.digit) {
       if (data.prefix_text) {
-        return <div className="pb-count-number-prefix">{data.prefix_text}</div>
+        return <div className="pb-count-number-prefix">{data.prefix_text}</div>;
       }
       if (data.digit_animation.itemOpen) {
         return (
@@ -36,7 +36,7 @@ const AnimatedNumber = ({ data }) => {
           >
             0
           </div>
-        )
+        );
       } else {
         return (
           <div
@@ -46,18 +46,18 @@ const AnimatedNumber = ({ data }) => {
           >
             0
           </div>
-        )
+        );
       }
     }
-    return null
-  }
+    return null;
+  };
 
   const renderAdditional = () => {
     if (data.additional) {
-      return <div className="pb-count-number-addition">{data.additional}</div>
+      return <div className="pb-count-number-addition">{data.additional}</div>;
     }
-    return null
-  }
+    return null;
+  };
 
   return (
     <div className="pb-animated-counter-addon">
@@ -79,7 +79,7 @@ const AnimatedNumber = ({ data }) => {
         )}
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default AnimatedNumber
+export default AnimatedNumber;

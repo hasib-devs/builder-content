@@ -1,4 +1,4 @@
-import Button from "../../components/blocks/basic/Button/Editor";
+import Button from "../../../components/blocks/basic/Button/Editor";
 
 export const pb_button = {
   type: "content",

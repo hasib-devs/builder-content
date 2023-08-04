@@ -18,15 +18,18 @@ import Testimonial from "../components/blocks/basic/Testimonial/Editor";
 import TestimonialCarousel from "../components/blocks/basic/TestimonialCarousel/Editor";
 import VideoComponent from "../components/blocks/basic/VideoComponent/Editor";
 import VideoPopup from "../components/blocks/basic/VideoPopup/Editor";
-import { pb_accordion } from "./blocks/pb_accordion";
-import { pb_alert } from "./blocks/pb_alert";
-import { pb_animated_number } from "./blocks/pb_animated_number";
-import { pb_block_number } from "./blocks/pb_block_number";
-import { pb_button } from "./blocks/pb_button";
-import { pb_button_group } from "./blocks/pb_button_group";
-import { pb_carousel } from "./blocks/pb_carousel";
-import { pb_text_block } from "./blocks/pb_text_block";
-
+import { pb_accordion } from "./blocks/basic/pb_accordion";
+import { pb_alert } from "./blocks/basic/pb_alert";
+import { pb_animated_number } from "./blocks/basic/pb_animated_number";
+import { pb_block_number } from "./blocks/basic/pb_block_number";
+import { pb_button } from "./blocks/basic/pb_button";
+import { pb_button_group } from "./blocks/basic/pb_button_group";
+import { pb_carousel } from "./blocks/basic/pb_carousel";
+import { pb_text_block } from "./blocks/basic/pb_text_block";
+import { category_grid } from "./blocks/ecommerce/category_grid";
+import { category_list } from "./blocks/ecommerce/category_list";
+import { product_grid } from "./blocks/ecommerce/product_grid";
+import { vendor_section } from "./blocks/ecommerce/vendor_section";
 
 export const addonGroups = {
   basic: "Basic",
@@ -37,6 +40,12 @@ export const addonGroups = {
 export type AddonGroupType = keyof typeof addonGroups;
 
 export const addonsJSON = {
+  // Ecommerce
+  category_grid,
+  category_list,
+  product_grid,
+  vendor_section,
+  // Basic
   pb_accordion,
   pb_alert,
   pb_animated_number,

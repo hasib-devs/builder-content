@@ -1,5 +1,4 @@
-import _ from 'lodash'
-import React from 'react'
+import _ from 'lodash';
 
 function Icon({ data }) {
   return (
@@ -22,7 +21,7 @@ function Icon({ data }) {
         )}
       </div>
     </div>
-  )
+  );
 }
 
-export default Icon
+export default Icon;

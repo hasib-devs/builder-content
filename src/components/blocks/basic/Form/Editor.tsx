@@ -1,8 +1,7 @@
-import _ from 'lodash'
-import React from 'react'
+import _ from 'lodash';
 
 const Form = ({ data }) => {
-  const classList = `pb-btn-${data.fullwidth_button}`
+  const classList = `pb-btn-${data.fullwidth_button}`;
 
   const renderFieldType = (field) => {
     switch (field.field_type) {
@@ -11,14 +10,14 @@ const Form = ({ data }) => {
           <span className="pb-form-field-item pb-form-field-input">
             <input type="text" placeholder={field.placeholder || ''} />
           </span>
-        )
+        );
 
       case 'email':
         return (
           <span className="pb-form-field-item pb-form-field-email">
             <input type="email" placeholder={field.placeholder || ''} />
           </span>
-        )
+        );
 
       case 'textarea':
         return (
@@ -27,7 +26,7 @@ const Form = ({ data }) => {
           >
             <textarea placeholder={field.placeholder || ''} />
           </span>
-        )
+        );
 
       case 'radio':
         return field.radio_field_options.map((radioField) => (
@@ -38,7 +37,7 @@ const Form = ({ data }) => {
             <input type="radio" value={radioField.label} />
             <label htmlFor={radioField.label}>{radioField.label}</label>
           </span>
-        ))
+        ));
 
       case 'checkbox':
         return field.checkbox_field_options.map((checkBoxField) => (
@@ -49,7 +48,7 @@ const Form = ({ data }) => {
             <input type="checkbox" value={checkBoxField.label} />
             <label htmlFor={checkBoxField.label}>{checkBoxField.label}</label>
           </span>
-        ))
+        ));
 
       case 'select':
         return (
@@ -62,12 +61,12 @@ const Form = ({ data }) => {
               ))}
             </select>
           </span>
-        )
+        );
 
       default:
-        return null
+        return null;
     }
-  }
+  };
 
   return (
     <div className="pb-forms-addon">
@@ -140,7 +139,7 @@ const Form = ({ data }) => {
         )}
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Form
+export default Form;

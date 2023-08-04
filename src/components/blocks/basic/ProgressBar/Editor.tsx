@@ -1,14 +1,12 @@
-import React from 'react'
-
 const ProgressBar = ({ data }) => {
-  const stripped = data.stripped === 1 ? 'pb-progress-bar-striped' : ''
-  const showTitleContent = data.show_title === 1 ? data.title : ''
+  const stripped = data.stripped === 1 ? 'pb-progress-bar-striped' : '';
+  const showTitleContent = data.show_title === 1 ? data.title : '';
   const showPercentContent =
     data.show_percent === 1
       ? data.progress_width
         ? data.progress_width
         : '50'
-      : ''
+      : '';
 
   return (
     <div className="pb-progress-bar-addon">
@@ -85,7 +83,7 @@ const ProgressBar = ({ data }) => {
         )}
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default ProgressBar
+export default ProgressBar;

@@ -1,8 +1,8 @@
-import React, { useState } from 'react'
-import ReactHtmlParser from 'react-html-parser'
+import { useState } from 'react';
+import ReactHtmlParser from 'react-html-parser';
 
 const Tab = ({ data }) => {
-  const [activeTab, setActiveTab] = useState(0)
+  const [activeTab, setActiveTab] = useState(0);
 
   const classList = `${
     data.tabtype ? data.tabtype + '-tab' : ' horizontal-tab'
@@ -16,14 +16,14 @@ const Tab = ({ data }) => {
                       data.horizontal_align
                         ? ' ' + data.horizontal_align
                         : ' horizontalcenter'
-                    }`
+                    }`;
 
   return (
     <div className="pb-tab-addon">
       <div className={`pb-tab-addon-content ${classList}`}>
         <ul className="pb-tab-nav">
           {data.tab_list.map((value, key) => {
-            const activeClass = key === activeTab ? 'active' : ''
+            const activeClass = key === activeTab ? 'active' : '';
             return (
               <li
                 className={`pb-tab-nav-list pb-nav-${value.icon_position} ${activeClass}`}
@@ -48,12 +48,12 @@ const Tab = ({ data }) => {
                   </div>
                 </div>
               </li>
-            )
+            );
           })}
         </ul>
         <div className="pb-tab-content-wrap">
           {data.tab_list.map((value, key) => {
-            const activeContent = key === activeTab ? 'active' : ''
+            const activeContent = key === activeTab ? 'active' : '';
             return (
               <div
                 id={`tab-${key}`}
@@ -62,12 +62,12 @@ const Tab = ({ data }) => {
               >
                 {ReactHtmlParser(value.content)}
               </div>
-            )
+            );
           })}
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Tab
+export default Tab;

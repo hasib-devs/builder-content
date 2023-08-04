@@ -5,7 +5,7 @@ import { rowSettings } from "./data/rowSettings";
 export default {
   ajaxurl: "",
   initialState: [],
-  script_debug: 0,
+  script_debug: 1,
   commonCss:
     ".pb-builder-container#pb-builder-container .pb-row-parent > .pb-container, .pb-carousel-content-wrap .pb-container{ max-width: 1140px }.pb-builder-container#pb-builder-container > .pb-row-parent > .pb-container,.pb-builder-container#pb-builder-container  .pb-row-placeholder > .pb-row-parent > .pb-container,.pb-carousel-content-wrap .pb-container, .pb-builder-container .pb-column-parent-view { padding-left: 15px; }.pb-builder-container#pb-builder-container > .pb-row-parent > .pb-container, .pb-builder-container#pb-builder-container .pb-row-placeholder > .pb-row-parent > .pb-container,.pb-carousel-content-wrap .pb-container, .pb-builder-container .pb-column-parent-view{ padding-right: 15px; }  .pb-container > .pb-row { margin-left: -15px; }.pb-container > .pb-row { margin-right: -15px; } .pb-builder-container .pb-column-parent-editor .pb-column { margin-left: 15px; } .pb-builder-container .pb-column-parent-editor .pb-column { margin-right: 15px; }",
   rowStyle: {

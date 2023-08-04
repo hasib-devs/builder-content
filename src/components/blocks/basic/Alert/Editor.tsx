@@ -1,5 +1,3 @@
-import React from 'react'
-
 const Alert = ({ data }) => {
   return (
     <div className="pb-alert-addon">
@@ -21,7 +19,7 @@ const Alert = ({ data }) => {
         )}
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Alert
+export default Alert;

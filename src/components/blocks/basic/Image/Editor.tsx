@@ -1,10 +1,9 @@
-import _ from 'lodash'
-import React from 'react'
+import _ from 'lodash';
 
 function ImageComponent(props) {
-  const { data } = props
+  const { data } = props;
   const { lightbox, lightbox_icon, image_link, upload_image, caption_text } =
-    data
+    data;
 
   return (
     <div className="pb-image-addon">
@@ -46,7 +45,7 @@ function ImageComponent(props) {
         )}
       </figure>
     </div>
-  )
+  );
 }
 
-export default ImageComponent
+export default ImageComponent;

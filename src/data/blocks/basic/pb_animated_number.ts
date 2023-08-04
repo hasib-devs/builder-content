@@ -1,4 +1,4 @@
-import AnimatedNumber from "../../components/blocks/basic/AnimatedNumber/Editor";
+import AnimatedNumber from "../../../components/blocks/basic/AnimatedNumber/Editor";
 
 export const pb_animated_number = {
   type: "content",

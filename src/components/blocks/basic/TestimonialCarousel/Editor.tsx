@@ -1,11 +1,10 @@
-import React from 'react'
-import Slider from 'react-slick'
+import Slider from 'react-slick';
 
 const TestimonialCarousel = ({ data }) => {
-  const column = data.column ? data.column : '1'
+  const column = data.column ? data.column : '1';
   const control_nav_style = data.control_nav_style
     ? data.control_nav_style
-    : 'nav_style1'
+    : 'nav_style1';
 
   const settings = {
     dots: Boolean(Number(data.control_dots)),
@@ -16,7 +15,7 @@ const TestimonialCarousel = ({ data }) => {
 
     slidesToShow: 1,
     slidesToScroll: 1,
-  }
+  };
 
   return (
     <div className="pb-testimonial-addon">
@@ -66,7 +65,7 @@ const TestimonialCarousel = ({ data }) => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default TestimonialCarousel
+export default TestimonialCarousel;

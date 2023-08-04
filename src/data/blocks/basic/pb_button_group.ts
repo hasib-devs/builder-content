@@ -1,4 +1,4 @@
-import ButtonGroup from "../../components/blocks/basic/ButtonGroup/Editor";
+import ButtonGroup from "../../../components/blocks/basic/ButtonGroup/Editor";
 
 export const pb_button_group = {
   type: "content",
