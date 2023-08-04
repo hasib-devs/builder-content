@@ -18,7 +18,7 @@ export const category_grid = {
         std: "0",
       },
       custom_items: {
-        type: "categoryselect",
+        type: "api-searchable-select",
         title: "Select Custom Items",
         std: "",
         depends: [["show_custom_items", "=", "1"]],
