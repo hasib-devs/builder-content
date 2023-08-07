@@ -37,7 +37,7 @@ const ProductCard: FC<ProductCardProps> = ({
                   ? generateImageUrl(product.media[0].path)
                   : '/images/placeholder.png'
               }
-              fill={true}
+              // fill={true}
               alt="product-image"
             />
           </div>
