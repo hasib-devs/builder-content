@@ -8,7 +8,11 @@ const ProductGrid = ({ data }) => {
   const { axios, catalogConf } = useBuilderConfigContext();
   const fetchData = async () => {
     try {
-      const res = await axios.get('/api/v1/products?limit=8', catalogConf);
+      const limit = !Boolean(data.show_custom_items) && Number(data.max_item);
+      const res = await axios.get(
+        `/api/v1/products?limit=${limit}`,
+        catalogConf
+      );
 
       setProducts(res.data.data);
     } catch (error) {}
@@ -16,20 +20,13 @@ const ProductGrid = ({ data }) => {
 
   useEffect(() => {
     fetchData();
-  }, []);
+  }, [data.max_item]);
 
   return (
     <div className="grid gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 lg:gap-8">
-      {products
-        ?.filter((c, index) => {
-          if (Boolean(data.show_custom_items) && data?.custom_items?.length) {
-            return data.custom_items.includes(c.id);
-          }
-          return index < Number(data.max_item);
-        })
-        .map((product, index) => {
-          return <ProductCard product={product} key={index} />;
-        })}
+      {products.map((product, index) => {
+        return <ProductCard product={product} key={index} />;
+      })}
     </div>
   );
 };
