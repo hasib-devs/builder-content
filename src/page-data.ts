@@ -1,5 +1,5 @@
 import { addonsJSON } from './data/addonsJSON';
-// import { colSettings } from './data/colSettings';
+import { colSettings } from './data/colSettings';
 import { rowSettings } from './data/rowSettings';
 
 export default {
@@ -102,7 +102,7 @@ export default {
     addon_display: '{{SELECTOR}}{ display: {{data.addon_display}} ; }',
   },
   addonsJSON: addonsJSON,
-  // colSettings: colSettings,
+  colSettings: colSettings,
   rowSettings: rowSettings,
   globalAttr: {
     style: {

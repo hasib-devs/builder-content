@@ -30,6 +30,7 @@ import { category_grid } from './blocks/ecommerce/category_grid';
 import { category_list } from './blocks/ecommerce/category_list';
 import { product_grid } from './blocks/ecommerce/product_grid';
 import { vendor_section } from './blocks/ecommerce/vendor_section';
+import { site_header } from './blocks/site/site_header';
 
 export const addonGroups = {
   basic: 'Basic',
@@ -40,6 +41,8 @@ export const addonGroups = {
 export type AddonGroupType = keyof typeof addonGroups;
 
 export const addonsJSON = {
+  // Site
+  site_header,
   // Ecommerce
   category_grid,
   category_list,
