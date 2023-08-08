@@ -1,5 +1,5 @@
 import _ from "lodash";
-import page_data from "../page_data";
+import page_data from "../page-data";
 
 const replaceData = (selector, key, value) => {
   if (value.toString().trim()) {

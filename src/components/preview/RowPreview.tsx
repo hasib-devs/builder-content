@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import { CssGenerator } from '../../helpers/previewCssGenerator';
 import ColumnPreview from './ColumnPreview';
-import page_data from './../../page_data';
+import page_data from '../../page-data';
 import { VideoBackground } from '../../helpers/VideoBackground';
 
 const RowPreview = ({ row, rowIndex, id }) => {

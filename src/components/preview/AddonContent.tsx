@@ -1,12 +1,12 @@
 import { ReactElement, useEffect, useState } from 'react';
-import page_data from '../../page_data';
+import PageData from '@/page-data';
 
 const AddonContent = ({ addon }) => {
   const [htmlContent, setHtmlContent] = useState<ReactElement>(<></>);
 
   useEffect(() => {
     setHtmlContent(() => {
-      const { Editor } = page_data.addonsJSON[addon.name];
+      const { Editor } = PageData.addonsJSON[addon.name];
       return <Editor data={addon.settings} />;
     });
   }, []);
