@@ -24,7 +24,7 @@ const CategoryList = ({ data }) => {
     fetchCategories();
   }, []);
   return (
-    <div className="h-full rounded border  sm:block">
+    <div className="h-full rounded border-[0.5px]  sm:block">
       <div className="relative h-full border py-4">
         <h6 className="px-4 text-base font-bold">{data.title}</h6>
 
