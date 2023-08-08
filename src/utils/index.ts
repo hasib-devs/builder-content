@@ -1,10 +1,10 @@
-import { store } from "../store";
+
 
 export const storageURL = "https://storage.googleapis.com/dokan-dev"
 export const formatCurrency = (value: number, fractionDigit = 0) => {
   return new Intl.NumberFormat("en-US", {
     style: "currency",
-    currency: store.getState().global.currency.name,
+    currency: 'USD',
     minimumFractionDigits: fractionDigit,
   }).format(value);
 };

@@ -29,16 +29,15 @@ const ProductCard: FC<ProductCardProps> = ({
         onClick={handleOnClick}
       >
         <div>
-          <div className="rounded border bg-gray-100">
+          <div className="relative h-[150px] w-full object-cover">
             <img
-              className="max-w-full h-auto"
+              className={'rounded'}
               src={
                 product.media[0]?.path
                   ? generateImageUrl(product.media[0].path)
                   : '/images/placeholder.png'
               }
-              height={150}
-              width={150}
+              // fill={true}
               alt="product-image"
             />
           </div>
