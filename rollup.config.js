@@ -7,6 +7,7 @@ import pkg from './package.json';
 import json from '@rollup/plugin-json';
 import globals from 'rollup-plugin-node-globals';
 import alias from '@rollup/plugin-alias';
+import postcss from 'rollup-plugin-postcss';
 
 
 export default {
@@ -25,13 +26,18 @@ export default {
       exclude: 'node_modules/**'
     }),
     json(),
-    sass(),
     typescript(),
     alias({
       entries: [
         { find: '@', replacement: '.' },
       ]
     }),
+    postcss({
+      extract: 'builder.css',
+      config: './postcss.config.js',
+    }),
+    sass(),
+  
     commonjs(),
     nodeResolve(),
     globals(),
