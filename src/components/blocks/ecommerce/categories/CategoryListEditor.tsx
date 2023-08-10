@@ -3,6 +3,7 @@ import CategoryListItem from './CategoryListItem';
 import { CategoryTree } from '@/types/catalog';
 import { useBuilderConfigContext } from '@/contexts/config-context';
 import arrayToTree from 'array-to-tree';
+import { FiChevronRight } from 'react-icons/fi';
 const CategoryList = ({ data }) => {
   const [categories, setCategories] = useState<CategoryTree[]>([]);
   const { axios, catalogConf } = useBuilderConfigContext();
@@ -31,19 +32,30 @@ const CategoryList = ({ data }) => {
         {loading && <p>Loading...</p>}
 
         <ul className="mt-3">
-          {categories
-            .filter((c, index) => {
-              if (
-                Boolean(data.show_custom_items) &&
-                data?.custom_items?.length
-              ) {
-                return data.custom_items.includes(c.id);
-              }
-              return index < Number(data.max_item);
-            })
-            .map((category) => {
-              return <CategoryListItem category={category} key={category.id} />;
-            })}
+          <>
+            {categories
+              .filter((c, index) => {
+                if (
+                  Boolean(data.show_custom_items) &&
+                  data?.custom_items?.length
+                ) {
+                  return data.custom_items.includes(c.id);
+                }
+                return index < Number(data.max_item);
+              })
+              .map((category) => {
+                return (
+                  <CategoryListItem category={category} key={category.id} />
+                );
+              })}
+            <a
+              href="#"
+              className="mt-2 flex items-center justify-between px-4 text-sm hover:font-medium hover:text-primary-500"
+            >
+              All Categories
+              <FiChevronRight />
+            </a>
+          </>
         </ul>
       </div>
     </div>

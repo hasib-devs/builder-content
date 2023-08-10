@@ -39,13 +39,6 @@ const CategoryListItem = ({ category }: Props) => {
           </a>
         </li>
       )}
-      <a
-        href="#"
-        className="mt-2 flex items-center justify-between px-4 text-sm hover:font-medium hover:text-primary-500"
-      >
-        All Categories
-        <FiChevronRight />
-      </a>
     </>
   );
 };
