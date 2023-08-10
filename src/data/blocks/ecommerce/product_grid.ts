@@ -33,7 +33,7 @@ export const product_grid = {
       addon_display: "{{SELECTOR}}{ display: {{data.addon_display}} ; }",
   },
   visibility: true,
-  icon: "pb-font-block-number",
+  icon: "pb-font-interface",
   attr: {
     general: {
       show_custom_items: {
