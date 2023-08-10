@@ -1,7 +1,7 @@
 const Editor = ({ data }) => {
   console.log({ data });
 
-  return <div>Editor</div>;
+  return <div>Header Updated</div>;
 };
 
 export default Editor;
